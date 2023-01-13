@@ -1,0 +1,109 @@
+.about--section {
+  padding: 0 7rem;
+}
+
+.about--top {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 8rem;
+  margin-bottom: 5rem;
+  background-color: #fff;
+  padding: 4rem;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0px 0px 39px -23px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 0px 0px 39px -23px rgba(66, 68, 90, 1);
+  box-shadow: 0px 0px 39px -23px rgba(66, 68, 90, 1);
+}
+.about--landing {
+  max-width: 75rem;
+}
+
+.about--image {
+  display: flex;
+  width: 60rem;
+  position: relative;
+}
+.about--image img {
+  width: 100%;
+  right: -6rem;
+  position: relative;
+  object-fit: cover;
+  transform: scale(130%);
+  border-radius: 1rem;
+  -webkit-box-shadow: 0px 0px 39px -23px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 0px 0px 39px -23px rgba(66, 68, 90, 1);
+  box-shadow: 0px 0px 39px -23px rgba(66, 68, 90, 1);
+}
+
+.h2-red {
+  color: var(--red--primary);
+  font-weight: 600;
+  font-size: 6rem;
+}
+
+.about--short-desc {
+  /* padding: 0 15rem; */
+}
+.about--short-desc p {
+  color: #212121;
+  margin-top: 4rem;
+  font-size: 1.8rem;
+  /* line-height: 1.5rem; */
+  text-align: justify;
+}
+
+.about--sub {
+  margin-top: 10rem;
+  max-width: 140rem;
+  background-color: #fff;
+  padding: 5rem 9rem;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0px 0px 39px -23px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 0px 0px 39px -23px rgba(66, 68, 90, 1);
+  box-shadow: 0px 0px 39px -23px rgba(66, 68, 90, 1);
+}
+/* .about--sub::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 0.2rem;
+  background-color: var(--blue--primary);
+  top: -2rem;
+} */
+
+.about--sub h3 {
+  margin-bottom: 4.5rem;
+  font-weight: 500;
+  color: var(--red--primary);
+  font-size: 4.5rem;
+  text-align: center;
+}
+
+.about--sub-desc {
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+.about--sub-desc p {
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+.about--sub-desc ul {
+  list-style: disc;
+}
+.about--sub-desc ul li::marker {
+  color: var(--red--primary);
+  font-size: 4rem;
+}
+.about--sub-desc ul li {
+  margin-bottom: 3rem;
+}
+.about--sub-desc ul li p {
+  margin-left: 5rem;
+}
+.about--sub-desc h4 {
+  font-size: 2.8rem;
+  color: var(--blue--primary);
+  margin-bottom: 1rem;
+}

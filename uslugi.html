@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style_template.css" />
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/animation.css" />
+    <link rel="stylesheet" href="./css/uslugi.css" />
+    <link rel="stylesheet" href="./css/faq.css" />
+    <link rel="stylesheet" href="./css/queries.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Reem+Kufi+Ink&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.1/dist/leaflet.css"
+      integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.1/dist/leaflet.js"
+      integrity="sha256-NDI0K41gVbWqfkkaHj15IzU7PtMoelkzyKp8TOaFQ3s="
+      crossorigin=""
+    ></script>
+    <script defer src="./js/map.js"></script>
+    <script defer src="./js/script.js"></script>
+    <!-- <script defer src="./js/services.js"></script> -->
+    <script defer src="./js/services.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <title>Speed Cars Service | Rzeszów</title>
+  </head>
+  <body id="bodyy">
+    <!-- HEADER SECTION -->
+
+    <header class="header">
+      <!-- <div class="header__details page--margin"> -->
+      <div class="logo--text">
+        <img src="./img/logo.svg" alt="Logo warsztatu" class="logo--svg" />
+        <div class="logo--text--inner">
+          <p class="brand__name">SPEED CAR SERVICE</p>
+          <p class="brand__name--sub">
+            Najlepszy Mechanik Samochodowy w Rzeszowie
+          </p>
+        </div>
+      </div>
+      <div class="header__navigation">
+        <nav class="nav__navigation">
+          <ul>
+            <!-- <li
+                class="nav__element hvr-icon hvr-bounce-to-right hover-white-font"
+              > -->
+            <li class="nav__element ease-out">
+              <a href="./index.html" class="nav__button btn--home">Start</a>
+            </li>
+            <li class="nav__element ease-out">
+              <a href="./o-nas.html" class="nav__button">O nas</a>
+            </li>
+            <li class="nav__element ease-out active--card">
+              <a href="./uslugi.html" class="nav__button">Usługi</a>
+            </li>
+            <li class="nav__element ease-out">
+              <a href="./kontakt.html" class="nav__button">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="details__container">
+        <div class="contact__container space--4">
+          <ion-icon name="call-outline" class="icon"></ion-icon>
+          <div class="contact--div">
+            <p class="text-1">Zadzwoń teraz!</p>
+            <div class="contact-tels">
+              <p class="text-2">+48 661 770 012</p>
+              <p class="text-2">+48 730 731 046</p>
+            </div>
+          </div>
+        </div>
+        <div class="hours__container space--">
+          <ion-icon name="time-outline" class="icon"></ion-icon>
+          <div>
+            <p class="text-1">Godziny otwarcia</p>
+            <p class="text-2">10:00 - 18:00</p>
+            <p class="text-2">pon - sob</p>
+          </div>
+        </div>
+      </div>
+      <div class="nav-mobile">
+        <ion-icon name="menu-outline" class="nav-mobile__icon"></ion-icon>
+        <ion-icon name="close-outline" class="nav-mobile__close"></ion-icon>
+      </div>
+      <!-- </div> -->
+    </header>
+
+    <!-- ########################### -->
+    <!-- ######  MAIN SECTION ###### -->
+    <!-- ########################### -->
+
+    <!-- <div class="services--container">
+      <div class="service page--service">
+        <img src="./img/car-mechanic.jpg" alt="Service img" />
+        <div class="service_header">
+         
+          <h2 class="hero--subheading">Wymieniamy opony każdej marki</h2>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="services--info hero--polygon-top services--top">
+      <h2 class="hero--heading polygon--text">NASZE USŁUGI</h2>
+    </div>
+
+    <div class="all-services">
+      <div class="all-services--text">
+        <p>W naszym serwisie wykonujemy następujące usługi</p>
+        <div class="list-of-services">
+          <ul>
+            <li>wymiana oleju i filtrów</li>
+            <li>wymiana pasków klinowych</li>
+            <li>naprawa uszkodzonych silników</li>
+            <li>wymiana rozrządu</li>
+            <li>naprawa układów wydechowych</li>
+            <li>elektryka</li>
+            <li>naprawy rozruszników, alternatorów</li>
+            <li>naprawa oświetlenia, lamp</li>
+            <li>naprawa zawieszeń samochodowych oraz układów hamulcowych</li>
+            <li>wymiana tarcz hamulcowych i klocków.</li>
+            <li>kompleksowa naprawa zawieszeń</li>
+            <li>wymiana przewodów hamulcowych</li>
+            <li>wymiana amortyzatorów</li>
+            <li>
+              kompleksowa obsługa układów klimatyzacji z czynnikiem R134A,
+              R1234Y
+            </li>
+          </ul>
+          <ul>
+            <li>sprawdzenie szczelności klimatyzacji</li>
+            <li>odgrzybianie klimatyzacji</li>
+            <li>naprawa układu napędowego</li>
+            <li>wymiana sprzęgła i łożyska</li>
+            <li>wymiana przegubów, półosi</li>
+            <li>naprawa skrzyni biegów</li>
+            <li>diagnostyka komputerowa silnika</li>
+            <li>remont kapitalny silnika</li>
+            <li>aprawa układu kierowniczego</li>
+            <li>wymiana drążków i końcówek kierowniczych</li>
+            <li>wymiana płynu do wspomagania</li>
+            <li>wymiana pomp wspomagania</li>
+          </ul>
+        </div>
+      </div>
+      <div class="all-services--img">
+        <img src="./img/services-5v2.jpg" alt="Car photo" />
+      </div>
+    </div>
+
+    <h2 class="services--heading">Zobacz więcej</h2>
+
+    <div class="uslugi-container">
+      <a href="./uslugi/naprawa-silniki.html" class="usluga">
+        <div class="uslugi-img">
+          <img src="./img/powertrain.jpg" alt="zdjecie-uslugi" />
+        </div>
+        <div class="uslugi-opis">
+          <p>Naprawa silnika</p>
+          <div class="click--icon">
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+          </div>
+        </div>
+      </a>
+      <a href="./uslugi/uklad-hamulcowy.html" class="usluga">
+        <div class="uslugi-img">
+          <img src="./img/car-brake.jpg" alt="zdjecie-uslugi" />
+        </div>
+        <div class="uslugi-opis">
+          <p>Naprawa układu hamulcowego</p>
+          <div class="click--icon">
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+          </div>
+        </div>
+      </a>
+      <a href="./uslugi/zawieszenie-i-uklad-kierowniczy.html" class="usluga">
+        <div class="uslugi-img">
+          <img src="./img/stering.jpg" alt="zdjecie-uslugi" />
+        </div>
+        <div class="uslugi-opis">
+          <p>Zawieszenie i układ kierowniczy</p>
+          <div class="click--icon">
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+          </div>
+        </div>
+      </a>
+      <a href="./uslugi/uklad-paliwowy.html" class="usluga">
+        <div class="uslugi-img">
+          <img src="./img/fuel.jpg" alt="zdjecie-uslugi" />
+        </div>
+        <div class="uslugi-opis">
+          <p>Układ paliwowy</p>
+          <div class="click--icon">
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+          </div>
+        </div>
+      </a>
+      <a href="./uslugi/serwis-klimatyzacji.html" class="usluga">
+        <div class="uslugi-img">
+          <img src="./img/car-air.jpg" alt="zdjecie-uslugi" />
+        </div>
+        <div class="uslugi-opis">
+          <p>Serwis klimatyzacji</p>
+          <div class="click--icon">
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+          </div>
+        </div>
+      </a>
+      <a href="./uslugi/uklad-wydechowy.html" class="usluga">
+        <div class="uslugi-img">
+          <img src="./img/exhaust-2.webp" alt="zdjecie-uslugi" />
+        </div>
+        <div class="uslugi-opis">
+          <p>Układ wydechowy</p>
+          <div class="click--icon">
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="services--info services--contact hero--polygon-bottom">
+      <div class="polygon--text-bottom">
+        <h3>POTRZEBUJESZ NAPRAWY?</h3>
+        <div class="btn__services custom-btn btn-11">
+          <a href="kontakt.html">NAPISZ DO NAS</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ########################### -->
+    <!-- ######  MAIN SECTION END ###### -->
+    <!-- ########################### -->
+
+    <footer class="page--margin">
+      <div class="left">
+        <div class="details">
+          <h1>Kontakt</h1>
+          <div class="contact--details">
+            <ul>
+              <li class="name rel">
+                <ion-icon
+                  name="car-sport-outline"
+                  class="footer-icon"
+                ></ion-icon>
+                <span class="footer-text">Speed Cars Service</span>
+              </li>
+              <li class="tel rel">
+                <ion-icon name="call-outline" class="footer-icon"></ion-icon>
+                <a href="tel:730731046" class="footer-text">+48 661 770 012</a>
+              </li>
+              <li class="tel rel">
+                <ion-icon name="call-outline" class="footer-icon"></ion-icon>
+                <a href="tel:730731046" class="footer-text">+48 730 731 046</a>
+              </li>
+              <li class="email rel">
+                <ion-icon
+                  name="mail-open-outline"
+                  class="footer-icon"
+                ></ion-icon>
+                <a href="mailto:biuro@rzeszowspeedcar.pl" class="footer-text"
+                  >biuro@rzeszowspeedcar.pl</a
+                >
+              </li>
+              <li class="adress rel">
+                <ion-icon
+                  name="navigate-outline"
+                  class="footer-icon"
+                ></ion-icon>
+                <span class="footer-text">ul. Wspólna 1, 35-205 Rzeszów</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="mobile-hours">
+          <h1>Godziny otwarcia</h1>
+          <div class="hours--details">
+            <h2>Poniedziałek - Sobota</h2>
+            <p>7:00 - 18:00</p>
+          </div>
+        </div>
+      </div>
+      <div class="mid">
+        <div class="stripe"></div>
+        <div class="footer__cta">
+          <a href="#" class="footer-text">Start</a>
+          <a href="#" class="footer-text">O nas</a>
+          <a href="#" class="footer-text">Usługi</a>
+          <a href="#" class="footer-text">Kontakt</a>
+        </div>
+      </div>
+      <div class="right">
+        <div id="map" class="map"></div>
+      </div>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

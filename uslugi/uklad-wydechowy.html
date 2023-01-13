@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style_template.css" />
+    <link rel="stylesheet" href="../css/general.css" />
+    <link rel="stylesheet" href="../css/animation.css" />
+    <link rel="stylesheet" href="../css/uslugi.css" />
+    <link rel="stylesheet" href="../css/faq.css" />
+    <link rel="stylesheet" href="../css/queries.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Reem+Kufi+Ink&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.1/dist/leaflet.css"
+      integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.1/dist/leaflet.js"
+      integrity="sha256-NDI0K41gVbWqfkkaHj15IzU7PtMoelkzyKp8TOaFQ3s="
+      crossorigin=""
+    ></script>
+    <script defer src="../js/map.js"></script>
+    <script defer src="../js/script.js"></script>
+    <!-- <script defer src="./js/services.js"></script> -->
+    <script defer src="../js/services.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <title>Speed Cars Service | Rzeszów</title>
+  </head>
+  <body id="bodyy">
+    <!-- HEADER SECTION -->
+
+    <header class="header">
+      <!-- <div class="header__details page--margin"> -->
+      <div class="logo--text">
+        <img src="../img/logo.svg" alt="Logo warsztatu" class="logo--svg" />
+        <div class="logo--text--inner">
+          <p class="brand__name">SPEED CAR SERVICE</p>
+          <p class="brand__name--sub">
+            Najlepszy Mechanik Samochodowy w Rzeszowie
+          </p>
+        </div>
+      </div>
+      <div class="header__navigation">
+        <nav class="nav__navigation">
+          <ul>
+            <!-- <li
+                class="nav__element hvr-icon hvr-bounce-to-right hover-white-font"
+              > -->
+            <li class="nav__element ease-out">
+              <a href="../index.html" class="nav__button btn--home">Start</a>
+            </li>
+            <li class="nav__element ease-out">
+              <a href="../o-nas.html" class="nav__button">O nas</a>
+            </li>
+            <li class="nav__element ease-out active--card">
+              <a href="../uslugi.html" class="nav__button">Usługi</a>
+            </li>
+            <li class="nav__element ease-out">
+              <a href="../kontakt.html" class="nav__button">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="details__container">
+        <div class="contact__container space--4">
+          <ion-icon name="call-outline" class="icon"></ion-icon>
+          <div class="contact--div">
+            <p class="text-1">Zadzwoń teraz!</p>
+            <div class="contact-tels">
+              <p class="text-2">+48 661 770 012</p>
+              <p class="text-2">+48 730 731 046</p>
+            </div>
+          </div>
+        </div>
+        <div class="hours__container space--">
+          <ion-icon name="time-outline" class="icon"></ion-icon>
+          <div>
+            <p class="text-1">Godziny otwarcia</p>
+            <p class="text-2">10:00 - 18:00</p>
+            <p class="text-2">pon - sob</p>
+          </div>
+        </div>
+      </div>
+      <div class="nav-mobile">
+        <ion-icon name="menu-outline" class="nav-mobile__icon"></ion-icon>
+        <ion-icon name="close-outline" class="nav-mobile__close"></ion-icon>
+      </div>
+      <!-- </div> -->
+    </header>
+
+    <!-- ########################### -->
+    <!-- ######  MAIN SECTION ###### -->
+    <!-- ########################### -->
+
+    <!-- <div class="services--info hero--polygon-top">
+      <h2 class="hero--heading polygon--text">Układ napędowy</h2>
+    </div> -->
+
+    <div class="usluga-opis--container">
+      <div class="usluga-opis--img">
+        <img src="../img/exhaust-2.webp" alt="" />
+      </div>
+      <div class="usluga-opis--text">
+        <h1>Układ wydechowy</h1>
+        <h2>Naprawa układu wydechowego</h2>
+        <p>
+          Uszkodzony, czy niesprawny układ wydechowy z reguły wpływa na
+          nieprawidłową pracę silnika, a w skrajnych przypadkach może
+          doprowadzić do jego zniszczenia. Układ wydechowy ma za zadanie
+          odprowadzić spaliny z silnika, a także zmniejszyć hałas generowany
+          przez niego.
+        </p>
+        <p>
+          Spaliny przedostają się do kolektora za pomocą cylindrów. Stamtąd są
+          transportowane do katalizatora, a tam w wysokiej temperaturze zostają
+          zredukowane. Następnie gazy trafiają do tłumika i po oczyszczeniu
+          wyprowadzane są poza kabinę auta.
+        </p>
+
+        <h2>Przyczyny usterek układu wydechowego</h2>
+        <ul class="numeric">
+          <li>
+            <strong> Rdzewienie układu wydechowego </strong>
+
+            - Konstrukcja jest w zdecydowanej większości wykonana ze stali,
+            która wraz z upływem czasu oraz intensywnością eksploatacji pojazdu
+            narażona jest na szkodliwe działanie korozji. Elementy mogą zacząć
+            rdzewieć. Warto odpowiednio wcześnie interweniować, aby nie
+            doprowadzić do nadmiernej korozji.
+          </li>
+
+          <li>
+            <strong>Zapchanie filtra cząstek stałych (DFP/FAP)</strong>
+
+            - Do takiego zapchania może dojść, gdy pojazd znajduje się w złym
+            stanie technicznym albo użytkowane jest wyłącznie na krótkich
+            trasach, przez co nie ma szans na tzw. „przepalenie”.
+          </li>
+          <li>
+            <strong>Pęknięcie kolektora wydechowego</strong>
+
+            - Mimo, że kolektor z reguły jest wykonany z żeliwa, narażony jest
+            na oddziaływanie skrajnych temperatur (rozgrzewa się do wysokich a
+            następnie stygnie - zimą nawet do ujemnych). To powoduje jego
+            pęknięcia.
+          </li>
+        </ul>
+
+        <h2>Naprawa układu wydechowego</h2>
+        <p>
+          W warsztatach Speed Car Service można skorzystać z usługi naprawy
+          układu wydechowego, która obejmuje w pierwszej kolejności diagnostykę,
+          a mianowicie sprawdzamy szczelność całego układu i lokalizujemy
+          ewentualne uszkodzenia.
+        </p>
+        <p>Ponadto w ramach naprawy wykonujemy następujące prace:</p>
+        <ul>
+          <li>
+            analizowanie stanu wieszaków elastycznych wraz z ewentualną ich
+            wymianą
+          </li>
+          <li>spawanie miejscowo skorodowanych części</li>
+          <li>uszczelnianie połączeń między elementami</li>
+          <li>uszczelnianie połączeń między elementami</li>
+        </ul>
+
+        <p>
+          Podczas naprawy stosujemy elementy oryginalne bądź najlepsze dostępne
+          na rynku zamienniki, gdyż stosowanie ekonomicznych rozwiązań mogłoby
+          przynieść krótkotrwały efekt.
+        </p>
+      </div>
+    </div>
+
+    <!-- ########################### -->
+    <!-- ######  MAIN SECTION END ###### -->
+    <!-- ########################### -->
+
+    <footer class="page--margin">
+      <div class="left">
+        <div class="details">
+          <h1>Kontakt</h1>
+          <div class="contact--details">
+            <ul>
+              <li class="name rel">
+                <ion-icon
+                  name="car-sport-outline"
+                  class="footer-icon"
+                ></ion-icon>
+                <span class="footer-text">Speed Car Service</span>
+              </li>
+              <li class="tel rel">
+                <ion-icon name="call-outline" class="footer-icon"></ion-icon>
+                <a href="tel:730731046" class="footer-text">+48 661 770 012</a>
+              </li>
+              <li class="tel rel">
+                <ion-icon name="call-outline" class="footer-icon"></ion-icon>
+                <a href="tel:730731046" class="footer-text">+48 730 731 046</a>
+              </li>
+              <li class="email rel">
+                <ion-icon
+                  name="mail-open-outline"
+                  class="footer-icon"
+                ></ion-icon>
+                <a href="mailto:biuro@rzeszowspeedcar.pl" class="footer-text"
+                  >biuro@rzeszowspeedcar.pl</a
+                >
+              </li>
+              <li class="adress rel">
+                <ion-icon
+                  name="navigate-outline"
+                  class="footer-icon"
+                ></ion-icon>
+                <span class="footer-text">ul. Wspólna 1, 35-205 Rzeszów</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="mobile-hours">
+          <h1>Godziny otwarcia</h1>
+          <div class="hours--details">
+            <h2>Poniedziałek - Sobota</h2>
+            <p>7:00 - 18:00</p>
+          </div>
+        </div>
+      </div>
+      <div class="mid">
+        <div class="stripe"></div>
+        <div class="footer__cta">
+          <a href="../index.html" class="footer-text">Start</a>
+          <a href="../o-nas.html" class="footer-text">O nas</a>
+          <a href="../uslugi.html" class="footer-text">Usługi</a>
+          <a href="../kontakt.html" class="footer-text">Kontakt</a>
+        </div>
+      </div>
+      <div class="right">
+        <div id="map" class="map"></div>
+      </div>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

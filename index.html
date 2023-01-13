@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./css/style_template.css" />
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/faq.css" />
+    <link rel="stylesheet" href="./css/animation.css" />
+    <link rel="stylesheet" href="./css/slider.css" />
+    <link rel="stylesheet" href="./css/queries.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Reem+Kufi+Ink&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.1/dist/leaflet.css"
+      integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.1/dist/leaflet.js"
+      integrity="sha256-NDI0K41gVbWqfkkaHj15IzU7PtMoelkzyKp8TOaFQ3s="
+      crossorigin=""
+    ></script>
+    <script defer src="./js/map.js"></script>
+    <script defer src="./js/script.js"></script>
+
+    <title>Speed Cars Service | Rzeszów</title>
+  </head>
+  <body id="bodyy">
+    <!-- HEADER SECTION -->
+
+    <header class="header">
+      <!-- <div class="header__details page--margin"> -->
+      <div class="logo--text">
+        <img src="./img/logo.svg" alt="Logo warsztatu" class="logo--svg" />
+        <div class="logo--text--inner">
+          <p class="brand__name">SPEED CAR SERVICE</p>
+          <p class="brand__name--sub">
+            Najlepszy Mechanik Samochodowy w Rzeszowie
+          </p>
+        </div>
+      </div>
+      <div class="header__navigation">
+        <nav class="nav__navigation">
+          <ul>
+            <!-- <li
+                class="nav__element hvr-icon hvr-bounce-to-right hover-white-font"
+              > -->
+            <li class="nav__element ease-out active--card">
+              <a href="" class="nav__button btn--home">Start</a>
+            </li>
+            <li class="nav__element ease-out">
+              <a href="./o-nas.html" class="nav__button">O nas</a>
+            </li>
+            <li class="nav__element ease-out">
+              <a href="./uslugi.html" class="nav__button">Usługi</a>
+            </li>
+            <li class="nav__element ease-out">
+              <a href="./kontakt.html" class="nav__button">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="details__container">
+        <div class="contact__container space--4">
+          <ion-icon name="call-outline" class="icon"></ion-icon>
+          <div class="contact--div">
+            <p class="text-1">Zadzwoń teraz!</p>
+            <div class="contact-tels">
+              <p class="text-2">+48 661 770 012</p>
+              <p class="text-2">+48 730 731 046</p>
+            </div>
+          </div>
+        </div>
+        <div class="hours__container space--">
+          <ion-icon name="time-outline" class="icon"></ion-icon>
+          <div>
+            <p class="text-1">Godziny otwarcia</p>
+            <p class="text-2">10:00 - 18:00</p>
+            <p class="text-2">pon - sob</p>
+          </div>
+        </div>
+      </div>
+      <div class="nav-mobile">
+        <ion-icon name="menu-outline" class="nav-mobile__icon"></ion-icon>
+        <ion-icon name="close-outline" class="nav-mobile__close"></ion-icon>
+      </div>
+      <!-- </div> -->
+    </header>
+
+    <div class="hero__section">
+      <div class="left--text">
+        <p class="text--1">NAJLEPSZY</p>
+        <p class="text--2">MECHANIK W RZESZOWIE</p>
+        <div class="more__button btn--scroll-to">
+          <p>Zobacz nasz serwis</p>
+        </div>
+      </div>
+      <div class="image__box"></div>
+    </div>
+
+    <!-- ########################### -->
+    <!-- ######  MAIN SECTION ###### -->
+    <!-- ########################### -->
+
+    <section>
+      <div
+        class="hero--div section--padding main--section-settings gap--first"
+        id="section--1"
+      >
+        <div class="hero--client">
+          <p class="hero--short">//O NAS</p>
+          <h1 class="hero--heading">U nas klient jest najważniejszy</h1>
+
+          <p class="hero--description">
+            Speed Car Service to nowo powstały warsztat samochodowy na mapie
+            Rzeszowa, który tworzą doświadczeni eksperci w branży mechaniki
+            pojazdowej.
+          </p>
+          <p class="hero--subdesc">
+            Zespół tworzą eksperci z ponad 20 letnim doświadczeniem zdobytym
+            podczas pracy w Autoryzowanych Serwisach Obsługi renomowanych marek
+            samochodów w stolicy podkarpacia.
+          </p>
+          <p class="hero--subdesc">
+            Nasz serwis to miejsce, w którym nie ma rzeczy niemożliwych. Zespół
+            fachowców poradzi sobie tutaj z każdą usterką. Dzięki zdobytej
+            wiedzy i doświadczeniu podchodzimy indywidualnie do każdego klienta.
+          </p>
+          <p class="hero--subdesc">
+            Poza standardowym zakresem usług serwisowych podejmujemy się
+            skomplikowanych napraw silników, a jeśli naprawa jest skomplikowana,
+            informujemy transparentnie klienta, aby nie robić niepotrzebnych
+            kosztów, które nie dają gwarancji rozwiązania problemu.
+          </p>
+        </div>
+        <div class="hero--client__form">
+          <ul>
+            <li>
+              <div class="check_box">
+                <ion-icon name="checkmark-outline"></ion-icon>
+              </div>
+              <p>Doświadczeni fachowcy</p>
+            </li>
+            <li>
+              <div class="check_box active--box">
+                <ion-icon name="checkmark-outline"></ion-icon>
+              </div>
+              <p>Konkurencyjne niskie ceny</p>
+            </li>
+            <li>
+              <div class="check_box">
+                <ion-icon name="checkmark-outline"></ion-icon>
+              </div>
+              <p>Dokładne naprawy</p>
+            </li>
+            <li>
+              <div class="check_box">
+                <ion-icon name="checkmark-outline"></ion-icon>
+              </div>
+              <p>Wiarygodne terminy</p>
+            </li>
+            <li>
+              <div class="check_box">
+                <ion-icon name="checkmark-outline"></ion-icon>
+              </div>
+              <p>Profesjonalne podejście</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="hero--div section--padding__service section--services">
+        <p class="hero--short">//USŁUGI</p>
+        <h1 class="hero--heading">Nasze usługi</h1>
+        <div class="services--container">
+          <div class="service opony">
+            <div class="service_header">
+              <!-- <p class="hero--short">//Wymiana opon</p> -->
+              <h2 class="hero--subheading">Układ napędowy</h2>
+            </div>
+            <div class="service_description">
+              <ul>
+                <li>
+                  <!-- <ion-icon
+                    name="chevron-forward-outline"
+                    class="icon--service"
+                  ></ion-icon> -->
+                  <p>Remonty silników</p>
+                </li>
+                <li>
+                  <!-- <ion-icon
+                    name="chevron-forward-outline"
+                    class="icon--service"
+                  ></ion-icon> -->
+                  <p>Wymiana układów rozrządu</p>
+                </li>
+                <li>
+                  <!-- <ion-icon
+                    name="chevron-forward-outline"
+                    class="icon--service"
+                  ></ion-icon> -->
+                  <p>Naprawa skrzyni biegów i sprzęgła</p>
+                </li>
+                <li>
+                  <!-- <ion-icon
+                    name="chevron-forward-outline"
+                    class="icon--service"
+                  ></ion-icon> -->
+                  <p>Wymiana oleju w skrzyni biegów</p>
+                </li>
+                <li>
+                  <!-- <ion-icon
+                    name="chevron-forward-outline"
+                    class="icon--service"
+                  ></ion-icon> -->
+                  <p>Wymiana koła dwumasowego</p>
+                </li>
+                <li>
+                  <!-- <ion-icon
+                    name="chevron-forward-outline"
+                    class="icon--service"
+                  ></ion-icon> -->
+                  <p>Wymiana osłon przegubów napędowych</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="service klucz">
+            <div class="service_header">
+              <!-- <p class="hero--short">//Wymiana opon</p> -->
+              <h2 class="hero--subheading">Układ hamulcowy</h2>
+            </div>
+            <div class="service_description">
+              <ul>
+                <li>
+                  <!-- <ion-icon
+                    name="chevron-forward-outline"
+                    class="icon--service"
+                  ></ion-icon> -->
+                  <p>Obsługa układów hamulcowych</p>
+                </li>
+                <li>
+                  <!-- <ion-icon
+                    name="chevron-forward-outline"
+                    class="icon--service"
+                  ></ion-icon> -->
+                  <p>Odpowietrzanie układu hamulcowego</p>
+                </li>
+                <li>
+                  <!-- <ion-icon
+                    name="chevron-forward-outline"
+                    class="icon--service"
+                  ></ion-icon> -->
+                  <p>Wymiana tarcz, klocków, szczęk, cylinderków, bębnów</p>
+                </li>
+                <li>
+                  <!-- <ion-icon
+                    name="chevron-forward-outline"
+                    class="icon--service"
+                  ></ion-icon> -->
+                  <p>Wymiana płynu hamulcowego</p>
+                </li>
+                <li>
+                  <!-- <ion-icon
+                    name="chevron-forward-outline"
+                    class="icon--service"
+                  ></ion-icon> -->
+                  <p>Diagnostyka i usuwania awarii układów ABS, ESP</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="service silnik">
+            <div class="service_header">
+              <!-- <p class="hero--short">//Wymiana opon</p> -->
+              <h2 class="hero--subheading">Zawieszenie i układ kierowniczy</h2>
+            </div>
+            <div class="service_description">
+              <ul>
+                <li>
+                  <!-- <ion-icon
+                    name="chevron-forward-outline"
+                    class="icon--service"
+                  ></ion-icon> -->
+                  <p>Nieszczelności w układzie (pojazd się obniża)</p>
+                </li>
+                <li>
+                  <!-- <ion-icon
+                    name="chevron-forward-outline"
+                    class="icon--service"
+                  ></ion-icon> -->
+                  <p>Awarie amortyzatorów</p>
+                </li>
+                <li>
+                  <!-- <ion-icon
+                    name="chevron-forward-outline"
+                    class="icon--service"
+                  ></ion-icon> -->
+                  <p>Uszkodzenie sworzni, tulei oraz pęknięcie wahacza</p>
+                </li>
+                <li>
+                  <!-- <ion-icon
+                    name="chevron-forward-outline"
+                    class="icon--service"
+                  ></ion-icon> -->
+                  <p>Sprawdzanie elementów sprężystych</p>
+                </li>
+                <li>
+                  <!-- <ion-icon
+                    name="chevron-forward-outline"
+                    class="icon--service"
+                  ></ion-icon> -->
+                  <p>Sprawdzanie układu kierowniczego</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="service opony">
+            <div class="service_header">
+              <!-- <p class="hero--short">//Wymiana opon</p> -->
+              <h2 class="hero--subheading">Układ paliwowy</h2>
+            </div>
+            <div class="service_description">
+              <ul>
+                <li>
+                  <!-- <ion-icon
+                    name="chevron-forward-outline"
+                    class="icon--service"
+                  ></ion-icon> -->
+                  <p>Wymiana filtra paliwa</p>
+                </li>
+                <li>
+                  <!-- <ion-icon
+                    name="chevron-forward-outline"
+                    class="icon--service"
+                  ></ion-icon> -->
+                  <p>Naprawa pomp paliwa</p>
+                </li>
+                <li>
+                  <!-- <ion-icon
+                    name="chevron-forward-outline"
+                    class="icon--service"
+                  ></ion-icon> -->
+                  <p>Naprawa wtryskiwaczy</p>
+                </li>
+                <li>
+                  <!-- <ion-icon
+                    name="chevron-forward-outline"
+                    class="icon--service"
+                  ></ion-icon> -->
+                  <p>Czyszczenie przewodów układu paliwowego</p>
+                </li>
+                <li>
+                  <!-- <ion-icon
+                    name="chevron-forward-outline"
+                    class="icon--service"
+                  ></ion-icon> -->
+                  <p>Wymiana przewodów paliwowych</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="service klucz">
+            <div class="service_header">
+              <!-- <p class="hero--short">// Naprawimy wszystko</p> -->
+              <h2 class="hero--subheading">Układ wydechowy</h2>
+            </div>
+            <div class="service_description">
+              <ul>
+                <li>
+                  <!-- <ion-icon
+                    name="chevron-forward-outline"
+                    class="icon--service"
+                  ></ion-icon> -->
+                  <p>Sprawdzenie szczelności układu</p>
+                </li>
+                <li>
+                  <!-- <ion-icon
+                    name="chevron-forward-outline"
+                    class="icon--service"
+                  ></ion-icon> -->
+                  <p>Wymiana katalizatorów</p>
+                </li>
+                <li>
+                  <!-- <ion-icon
+                    name="chevron-forward-outline"
+                    class="icon--service"
+                  ></ion-icon> -->
+                  <p>Naprawa (spawanie) elementów układu wydechowego</p>
+                </li>
+                <li>
+                  <!-- <ion-icon
+                    name="chevron-forward-outline"
+                    class="icon--service"
+                  ></ion-icon> -->
+                  <p>Wymiana tłumików</p>
+                </li>
+                <li>
+                  <!-- <ion-icon
+                    name="chevron-forward-outline"
+                    class="icon--service"
+                  ></ion-icon> -->
+                  <p>Wymiana rur wydechowych</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="service silnik">
+            <div class="service_header">
+              <!-- <p class="hero--short">// Naprawa silnika</p> -->
+              <h2 class="hero--subheading">Serwis klimatyzacji</h2>
+            </div>
+            <div class="service_description">
+              <ul>
+                <li>
+                  <!-- <ion-icon
+                    name="chevron-forward-outline"
+                    class="icon--service"
+                  ></ion-icon> -->
+                  <p>Odgrzybianie (dezynfekcja) klimatyzacji</p>
+                </li>
+                <li>
+                  <!-- <ion-icon
+                    name="chevron-forward-outline"
+                    class="icon--service"
+                  ></ion-icon> -->
+                  <p>Czyszczenie klimatyzacji i osuszanie</p>
+                </li>
+                <li>
+                  <!-- <ion-icon
+                    name="chevron-forward-outline"
+                    class="icon--service"
+                  ></ion-icon> -->
+                  <p>Uzupełnianie czynnika w klimatyzacji</p>
+                </li>
+                <li>
+                  <!-- <ion-icon
+                    name="chevron-forward-outline"
+                    class="icon--service"
+                  ></ion-icon> -->
+                  <p>Kontrola szczelności układu klimatyzacji</p>
+                </li>
+                <li>
+                  <!-- <ion-icon
+                    name="chevron-forward-outline"
+                    class="icon--service"
+                  ></ion-icon> -->
+                  <p>Konserwacja klimatyzacji</p>
+                </li>
+                <li>
+                  <!-- <ion-icon
+                    name="chevron-forward-outline"
+                    class="icon--service"
+                  ></ion-icon> -->
+                  <p>Wymiana filtra przeciwpyłkowego</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="btn--price-table">
+          <a href="./uslugi.html">Zobacz pozostałe</a>
+        </div>
+      </div>
+
+      <div class="mechanic--counter">
+        <div class="counter--introduction">
+          <p class="hero--short">// Nasza historia</p>
+          <h1 class="hero--heading color-white">Speed Car Service</h1>
+        </div>
+        <div class="counter--items">
+          <div class="counter--div">
+            <p class="counter--div_header">20</p>
+            <p class="counter--div_description">Lat w branży</p>
+          </div>
+          <div class="counter--div">
+            <p class="counter--div_header">100%</p>
+            <p class="counter--div_description">Zadowolonych klientów</p>
+          </div>
+          <div class="counter--div">
+            <p class="counter--div_header">7000+</p>
+            <p class="counter--div_description">Rozwiązanych problemów</p>
+          </div>
+          <div class="counter--div">
+            <p class="counter--div_header">5</p>
+            <p class="counter--div_description">
+              Wykwalifikowanych pracowników
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="brand--info hero--div slider--padding">
+        <p class="hero--short">//MARKI POJAZDÓW</p>
+        <h1 class="hero--heading">Podejmujemy się naprawy każdej marki!</h1>
+        <div class="slider">
+          <div class="slide-track">
+            <div class="slide">
+              <img src="img/brand-logos/audi.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="img/brand-logos/bmw.png" alt="" />
+            </div>
+            <div class="slide test">
+              <img src="img/brand-logos/alfa.png" alt="" />
+            </div>
+            <div class="slide test">
+              <img src="img/brand-logos/honda.png" alt="" />
+            </div>
+            <div class="slide test">
+              <img src="img/brand-logos/porshe.png" alt="" />
+            </div>
+            <div class="slide test">
+              <img src="img/brand-logos/toyota.png" alt="" />
+            </div>
+            <div class="slide test">
+              <img src="img/brand-logos/ford.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="img/brand-logos/audi.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="img/brand-logos/bmw.png" alt="" />
+            </div>
+            <div class="slide test">
+              <img src="img/brand-logos/alfa.png" alt="" />
+            </div>
+            <div class="slide test">
+              <img src="img/brand-logos/honda.png" alt="" />
+            </div>
+            <div class="slide test">
+              <img src="img/brand-logos/porshe.png" alt="" />
+            </div>
+            <div class="slide test">
+              <img src="img/brand-logos/toyota.png" alt="" />
+            </div>
+            <div class="slide test">
+              <img src="img/brand-logos/ford.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="hero--div section--padding faq-settings align--start gap--small"
+        id="section--faq"
+      >
+        <div class="faq">
+          <p class="hero--short">//FAQ</p>
+          <h1 class="hero--heading">Najczęściej zadawane pytania</h1>
+          <div class="container">
+            <div class="accordion">
+              <div class="accordion-item">
+                <button id="accordion-button-1" aria-expanded="true">
+                  <span class="accordion-title"
+                    >W jakiej lokalizacji znajduje się serwis i jakie są godziny
+                    otwarcia?</span
+                  ><span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                  <p>
+                    Speed Car Service jest czynny od pon-pt od 8:00-16:00,
+                    adres: ul. Wspólna 1, 35-205 Rzeszów w północnej części
+                    miasta. Serwis znajduje się w strefie przemysłowo-usługowej,
+                    gdzie daje możliwości oddania auta przed rozpoczęciem pracy
+                    i odbioru tego samego dnia.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button id="accordion-button-2" aria-expanded="false">
+                  <span class="accordion-title"
+                    >Gdzie można znaleźć cennik usług?</span
+                  ><span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                  <p>
+                    Serwis nie posiada z góry ustalonego jednolitego cennika.
+                    Kosztorys napraw jest zawsze przedstawiany na bieżąco po
+                    wykonaniu diagnostyki. W dalszym etapie klient otrzymuje
+                    zakres prac i koszt części zamiennych. Ostateczna wycena to
+                    składowa robocizny i materiałów. Przed rozpoczęciem zlecenia
+                    klient ostatecznie podejmuje decyzję i wskazuje pozycje z
+                    kosztorysu do realizacji. Natomiast jeśli zakres obejmuje
+                    podstawowy serwis eksploatacyjny lub proste naprawy, wtedy
+                    kalkulacja jest robiona telefonicznie bez konieczności
+                    wizyty w warsztacie.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button id="accordion-button-3" aria-expanded="false">
+                  <span class="accordion-title"
+                    >Jakie są terminy przyjęcia auta do naprawy?</span
+                  ><span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                  <p>
+                    Nie ma z góry ustalonej reguły, ale zwykle jest to 1-2 dni
+                    roboczych. Najbardziej przybliżony czas oczekiwania
+                    najlepiej jest poznać dzwoniąc do biura Speed Car Service.
+                    Za każdym razem staramy się umawiać terminy z krótkim czasem
+                    realizacji, jeśli naprawa nie jest skomplikowana i złożona
+                    po to, aby nasi klienci nie mieli ograniczonej mobilności.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button id="accordion-button-4" aria-expanded="false">
+                  <span class="accordion-title"
+                    >Czy serwis zapewnia części zamienne niezbędne do naprawy
+                    auta?</span
+                  ><span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                  <p>
+                    Serwis współpracuje z hurtowniami motoryzacyjnymi w
+                    regionie, które nawet w tym samym dniu zapewniają dostawę
+                    części zamiennych w najlepszych rynkowych cenach.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button
+                  class="flex--row-centered"
+                  id="accordion-button-5"
+                  aria-expanded="false"
+                >
+                  <span class="accordion-title">
+                    Czy mogę dostarczyć części zamienne we własnym zakresie do
+                    naprawy auta?</span
+                  ><span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                  <p>
+                    Oczywiście jest możliwa dostawa części we własnym zakresie,
+                    które zostaną uwzględnione w naprawie, wtedy koszt naprawy
+                    obejmuje jedynie usługę. Zostanie dodatkowo do wydruku
+                    zlecenia dodana adnotacja, że części zostały dostarczone na
+                    życzenie klienta, a serwis nie udziela gwarancji na
+                    zastosowane części zamienne i komplikacje spowodowane po ich
+                    montażu. Są to skrajne przypadki i jeśli klienci są w stanie
+                    sami dobrać odpowiednie części na podstawie numerów
+                    seryjnych i innych parametrów, to nie powinno dawać powodów
+                    do zmartwień.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button id="accordion-button-6" aria-expanded="false">
+                  <span class="accordion-title"
+                    >Czy mogę odebrać lub oddać auto poza standardowymi
+                    godzinami otwarcia?</span
+                  ><span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                  <p>
+                    Zawsze staramy się wyjść naprzeciw prośbom naszych klientów
+                    i często okoliczności pozwalają na taką możliwość. Za każdym
+                    razem prosimy o wcześniejszy kontakt z biurem obsługi pod
+                    jednym z numerów telefonu: 661 770 012 lub 730 731 046.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="more-questions">
+          <p>Masz więcej pytań?</p>
+          <div class="contact--box">
+            <span class="text--contact">Skontaktuj się z nami!</span>
+            <div class="btn--tel">
+              <a href="tel:+48730731046">+48 730 731 046</a>
+              <a href="tel:+48661770012">+48 661 770 012</a>
+              <!-- <span>+48 730 731 046</span>
+              <span>+48 661 770 012</span> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+    </section>
+
+    <!-- ########################### -->
+    <!-- ######  MAIN SECTION END ###### -->
+    <!-- ########################### -->
+
+    <footer class="page--margin">
+      <div class="left">
+        <div class="details">
+          <h1>Kontakt</h1>
+          <div class="contact--details">
+            <ul>
+              <li class="name rel">
+                <ion-icon
+                  name="car-sport-outline"
+                  class="footer-icon"
+                ></ion-icon>
+                <span class="footer-text">Speed Cars Service</span>
+              </li>
+              <li class="tel rel">
+                <ion-icon name="call-outline" class="footer-icon"></ion-icon>
+                <a href="tel:730731046" class="footer-text">+48 661 770 012</a>
+              </li>
+              <li class="tel rel">
+                <ion-icon name="call-outline" class="footer-icon"></ion-icon>
+                <a href="tel:730731046" class="footer-text">+48 730 731 046</a>
+              </li>
+              <li class="email rel">
+                <ion-icon
+                  name="mail-open-outline"
+                  class="footer-icon"
+                ></ion-icon>
+                <a href="mailto:biuro@rzeszowspeedcar.pl" class="footer-text"
+                  >biuro@rzeszowspeedcar.pl</a
+                >
+              </li>
+              <li class="adress rel">
+                <ion-icon
+                  name="navigate-outline"
+                  class="footer-icon"
+                ></ion-icon>
+                <span class="footer-text">ul. Wspólna 1, 35-205 Rzeszów</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="mobile-hours">
+          <h1>Godziny otwarcia</h1>
+          <div class="hours--details">
+            <h2>Poniedziałek - Sobota</h2>
+            <p>7:00 - 18:00</p>
+          </div>
+        </div>
+      </div>
+      <div class="mid">
+        <div class="stripe"></div>
+        <div class="footer__cta">
+          <a href="#" class="footer-text">Start</a>
+          <a href="#" class="footer-text">O nas</a>
+          <a href="#" class="footer-text">Usługi</a>
+          <a href="#" class="footer-text">Kontakt</a>
+        </div>
+      </div>
+      <div class="right">
+        <div id="map" class="map"></div>
+      </div>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

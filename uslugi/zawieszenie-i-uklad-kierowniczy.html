@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style_template.css" />
+    <link rel="stylesheet" href="../css/general.css" />
+    <link rel="stylesheet" href="../css/animation.css" />
+    <link rel="stylesheet" href="../css/uslugi.css" />
+    <link rel="stylesheet" href="../css/faq.css" />
+    <link rel="stylesheet" href="../css/queries.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Reem+Kufi+Ink&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.1/dist/leaflet.css"
+      integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.1/dist/leaflet.js"
+      integrity="sha256-NDI0K41gVbWqfkkaHj15IzU7PtMoelkzyKp8TOaFQ3s="
+      crossorigin=""
+    ></script>
+    <script defer src="../js/map.js"></script>
+    <script defer src="../js/script.js"></script>
+    <!-- <script defer src="./js/services.js"></script> -->
+    <script defer src="../js/services.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <title>Speed Cars Service | Rzeszów</title>
+  </head>
+  <body id="bodyy">
+    <!-- HEADER SECTION -->
+
+    <header class="header">
+      <!-- <div class="header__details page--margin"> -->
+      <div class="logo--text">
+        <img src="../img/logo.svg" alt="Logo warsztatu" class="logo--svg" />
+        <div class="logo--text--inner">
+          <p class="brand__name">SPEED CAR SERVICE</p>
+          <p class="brand__name--sub">
+            Najlepszy Mechanik Samochodowy w Rzeszowie
+          </p>
+        </div>
+      </div>
+      <div class="header__navigation">
+        <nav class="nav__navigation">
+          <ul>
+            <!-- <li
+                class="nav__element hvr-icon hvr-bounce-to-right hover-white-font"
+              > -->
+            <li class="nav__element ease-out">
+              <a href="../index.html" class="nav__button btn--home">Start</a>
+            </li>
+            <li class="nav__element ease-out">
+              <a href="../o-nas.html" class="nav__button">O nas</a>
+            </li>
+            <li class="nav__element ease-out active--card">
+              <a href="../uslugi.html" class="nav__button">Usługi</a>
+            </li>
+            <li class="nav__element ease-out">
+              <a href="../kontakt.html" class="nav__button">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="details__container">
+        <div class="contact__container space--4">
+          <ion-icon name="call-outline" class="icon"></ion-icon>
+          <div class="contact--div">
+            <p class="text-1">Zadzwoń teraz!</p>
+            <div class="contact-tels">
+              <p class="text-2">+48 661 770 012</p>
+              <p class="text-2">+48 730 731 046</p>
+            </div>
+          </div>
+        </div>
+        <div class="hours__container space--">
+          <ion-icon name="time-outline" class="icon"></ion-icon>
+          <div>
+            <p class="text-1">Godziny otwarcia</p>
+            <p class="text-2">10:00 - 18:00</p>
+            <p class="text-2">pon - sob</p>
+          </div>
+        </div>
+      </div>
+      <div class="nav-mobile">
+        <ion-icon name="menu-outline" class="nav-mobile__icon"></ion-icon>
+        <ion-icon name="close-outline" class="nav-mobile__close"></ion-icon>
+      </div>
+      <!-- </div> -->
+    </header>
+
+    <!-- ########################### -->
+    <!-- ######  MAIN SECTION ###### -->
+    <!-- ########################### -->
+
+    <!-- <div class="services--info hero--polygon-top">
+      <h2 class="hero--heading polygon--text">Układ napędowy</h2>
+    </div> -->
+
+    <div class="usluga-opis--container">
+      <div class="usluga-opis--img">
+        <img src="../img/stering.jpg" alt="" />
+      </div>
+      <div class="usluga-opis--text">
+        <h1>Zawieszenie i układ kierowniczy</h1>
+        <h2>Naprawa zawieszenia</h2>
+        <p>
+          Układ zawieszenia odpowiada za komfort jazdy, za poprawne prowadzenie
+          pojazdu, tłumienie drgań przenoszonych z drogi oraz przede wszystkim
+          za bezpieczeństwo, dzięki zapewnieniu przyczepności do drogi.
+          Zawieszenie jest skomplikowanym układem ze względu na złożoność
+          współpracy wielu elementów jednocześnie.
+        </p>
+        <p>
+          Choć stan dróg w Polsce przez ostatnie kilkanaście lat znacznie się
+          poprawił, to w dalszym ciągu, szczególnie w sezonie zimowym kierowcy
+          najczęściej odwiedzają warsztaty z powodu awarii układu zawieszenia i
+          przekładni kierowniczej. Najczęstszymi symptomami świadczącymi o
+          awarii są min: stuki, skrzypienie, dźwięki dochodzące z podwozia
+          pojazdu, szarpanie przy ruszaniu czy niestabilne zachowanie się
+          pojazdu podczas wykonywanych skrętów w trakcie jazdy.
+        </p>
+        <p>
+          Ponadto auto może się przechylać przy wchodzeniu w zakręty, bądź
+          niepoprawnie reagować na ruchy kierownicą, których symptomów nie można
+          lekceważyć. Najczęściej obsługujemy awarie zawieszenia przedniego,
+          które z racji zwiększonego obciążenia na przednią oś, szybciej ulegają
+          uszkodzeniom.
+        </p>
+        <ul>
+          <li>awarie kompresorów</li>
+          <li>
+            nieszczelności w samym układzie (pojazd osiada i nie da się nim
+            jeździć)
+          </li>
+          <li>awarie amortyzatorów</li>
+          <li>korozje przyłącza przewodów do miechów</li>
+          <li>
+            uszkodzenie sworzni, tulei, a nawet pęknięcie wahacza (jeśli dojdzie
+            do niego w czasie jazdy, to możemy -nagle stracić kontrolę nad
+            samochodem)
+          </li>
+        </ul>
+
+        <h2>Naprawa układu kierowniczego</h2>
+        <p>
+          Jednym z systemów, wymagających natychmiastowej reakcji w przypadku
+          uszkodzenia jest układ kierowniczy, ponieważ nawet najdrobniejsza
+          niesprawność może odbić się negatywnie na eksploatacji pojazdu.
+        </p>
+        <p>
+          Uszkodzenia tego systemu w pojeździe wpływają na zmniejszenie
+          bezpieczeństwa i komfortu jazdy autem, a także mogą powodować szybsze
+          zużywanie się niektórych części pojazdu, jak m.in. opon, łożysk kół.
+        </p>
+        <p>
+          Właśnie dlatego ocena sprawności tego systemu jest elementem stałym
+          przeglądów okresowych.
+        </p>
+
+        <h2>Rola układu kierowniczego i jego budowa</h2>
+        <p>
+          Poprawne działanie całego systemu pozwala na bezpieczne sterowanie
+          autem, ponieważ to właśnie płynność jego pracy decyduje o manewrach
+          takich jak skręcanie, mijanie, wyprzedzanie czy zawracanie.
+        </p>
+
+        <p>Ponadto odpowiedzialny jest za utrzymanie stałego kierunku jazdy.</p>
+
+        <p>Na mechanizm składają się takie części jak:</p>
+
+        <ul>
+          <li>
+            <strong>Kolumna kierownicy</strong> – ma charakter dwuczęściowego
+            wału biegnącego od koła kierownicy w dół, łączy się w komorze
+            silnika z przekładnią
+          </li>
+          <li>
+            <strong>Przekładnia kierownicza</strong> – zazwyczaj są to
+            przekładnie zębatkowe; posiadają poziome ułożenie względem kolumny
+            kierownicy i zazwyczaj montowane są w autach z napędem na przednią
+            oś; w przypadku pojazdów z napędem na tylną oś używane są
+            przekładnie globoidalne, a także ślimakowe i śrubowo-kulkowe;
+            mechanizm zwrotniczy – stanowi zespół elementów, które łączą koła
+            kierowane z przekładnią.
+          </li>
+        </ul>
+
+        <h2>
+          O naprawie układu kierowniczego należy pomyśleć, gdy obserwuje się
+          następujące objawy:
+        </h2>
+        <ul>
+          <li>
+            wyczuwalna nierówna siła wspomagania podczas szybkiego obracania
+            kierownicą
+          </li>
+          <li>zbyt wolny powrót przednich kół do położenia na wprost</li>
+          <li>odgłosy stukania z okolic komory silnika</li>
+          <li>
+            luz bądź przeskok wyczuwalny w centralnym położeniu koła kierownicy
+          </li>
+          <li>ściąganie auta podczas jazdy</li>
+          <li>nierównomierne zużycie opon</li>
+        </ul>
+        <h2>Naprawa układu kierowniczego wiąże się np. z:</h2>
+        <ul>
+          <li>wymiana, naprawa lub regeneracja przekładni kierowniczej</li>
+          <li>wymiana drążka kierowniczego i końcówek tego drążka</li>
+          <li>wymiana osłony elastycznej przekładni kierowniczej</li>
+          <li>wymiana płynu wspomagania kierownicy</li>
+          <li>naprawa wraz z montażem wspomagania kierownicy</li>
+          <li>naprawa, regeneracja lub wymiana pompy wspomagania</li>
+          <li>naprawa lub wymiana zwrotnicy koła</li>
+          <li>naprawa lub wymiana przegubu kolumny kierowniczej</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ########################### -->
+    <!-- ######  MAIN SECTION END ###### -->
+    <!-- ########################### -->
+
+    <footer class="page--margin">
+      <div class="left">
+        <div class="details">
+          <h1>Kontakt</h1>
+          <div class="contact--details">
+            <ul>
+              <li class="name rel">
+                <ion-icon
+                  name="car-sport-outline"
+                  class="footer-icon"
+                ></ion-icon>
+                <span class="footer-text">Speed Car Service</span>
+              </li>
+              <li class="tel rel">
+                <ion-icon name="call-outline" class="footer-icon"></ion-icon>
+                <a href="tel:730731046" class="footer-text">+48 661 770 012</a>
+              </li>
+              <li class="tel rel">
+                <ion-icon name="call-outline" class="footer-icon"></ion-icon>
+                <a href="tel:730731046" class="footer-text">+48 730 731 046</a>
+              </li>
+              <li class="email rel">
+                <ion-icon
+                  name="mail-open-outline"
+                  class="footer-icon"
+                ></ion-icon>
+                <a href="mailto:biuro@rzeszowspeedcar.pl" class="footer-text"
+                  >biuro@rzeszowspeedcar.pl</a
+                >
+              </li>
+              <li class="adress rel">
+                <ion-icon
+                  name="navigate-outline"
+                  class="footer-icon"
+                ></ion-icon>
+                <span class="footer-text">ul. Wspólna 1, 35-205 Rzeszów</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="mobile-hours">
+          <h1>Godziny otwarcia</h1>
+          <div class="hours--details">
+            <h2>Poniedziałek - Sobota</h2>
+            <p>7:00 - 18:00</p>
+          </div>
+        </div>
+      </div>
+      <div class="mid">
+        <div class="stripe"></div>
+        <div class="footer__cta">
+          <a href="../index.html" class="footer-text">Start</a>
+          <a href="../o-nas.html" class="footer-text">O nas</a>
+          <a href="../uslugi.html" class="footer-text">Usługi</a>
+          <a href="../kontakt.html" class="footer-text">Kontakt</a>
+        </div>
+      </div>
+      <div class="right">
+        <div id="map" class="map"></div>
+      </div>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style_template.css" />
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/animation.css" />
+    <link rel="stylesheet" href="./css/faq.css" />
+    <link rel="stylesheet" href="./css/uslugi.css" />
+    <link rel="stylesheet" href="./css/about.css" />
+    <link rel="stylesheet" href="./css/queries.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Reem+Kufi+Ink&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.1/dist/leaflet.css"
+      integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.1/dist/leaflet.js"
+      integrity="sha256-NDI0K41gVbWqfkkaHj15IzU7PtMoelkzyKp8TOaFQ3s="
+      crossorigin=""
+    ></script>
+    <script defer src="./js/map.js"></script>
+    <script defer src="./js/script.js"></script>
+
+    <title>Speed Cars Service | Rzeszów</title>
+  </head>
+  <body id="bodyy">
+    <!-- HEADER SECTION -->
+
+    <header class="header">
+      <!-- <div class="header__details page--margin"> -->
+      <div class="logo--text">
+        <img src="./img/logo.svg" alt="Logo warsztatu" class="logo--svg" />
+        <div class="logo--text--inner">
+          <p class="brand__name">SPEED CAR SERVICE</p>
+          <p class="brand__name--sub">
+            Najlepszy Mechanik Samochodowy w Rzeszowie
+          </p>
+        </div>
+      </div>
+      <div class="header__navigation">
+        <nav class="nav__navigation">
+          <ul>
+            <!-- <li
+                class="nav__element hvr-icon hvr-bounce-to-right hover-white-font"
+              > -->
+            <li class="nav__element ease-out">
+              <a href="./index.html" class="nav__button btn--home">Start</a>
+            </li>
+            <li class="nav__element ease-out active--card">
+              <a href="./o-nas.html" class="nav__button">O nas</a>
+            </li>
+            <li class="nav__element ease-out">
+              <a href="./uslugi.html" class="nav__button">Usługi</a>
+            </li>
+            <li class="nav__element ease-out">
+              <a href="./kontakt.html" class="nav__button">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="details__container">
+        <div class="contact__container space--4">
+          <ion-icon name="call-outline" class="icon"></ion-icon>
+          <div class="contact--div">
+            <p class="text-1">Zadzwoń teraz!</p>
+            <div class="contact-tels">
+              <p class="text-2">+48 661 770 012</p>
+              <p class="text-2">+48 730 731 046</p>
+            </div>
+          </div>
+        </div>
+        <div class="hours__container space--">
+          <ion-icon name="time-outline" class="icon"></ion-icon>
+          <div>
+            <p class="text-1">Godziny otwarcia</p>
+            <p class="text-2">10:00 - 18:00</p>
+            <p class="text-2">pon - sob</p>
+          </div>
+        </div>
+      </div>
+      <div class="nav-mobile">
+        <ion-icon name="menu-outline" class="nav-mobile__icon"></ion-icon>
+        <ion-icon name="close-outline" class="nav-mobile__close"></ion-icon>
+      </div>
+      <!-- </div> -->
+    </header>
+
+    <!-- ########################### -->
+    <!-- ######  MAIN SECTION ###### -->
+    <!-- ########################### -->
+    <div class="services--info hero--polygon-top">
+      <h2 class="hero--heading polygon--text">O NAS</h2>
+    </div>
+
+    <div class="about--section flex--column-centered">
+      <div class="about--top">
+        <div class="about--landing flex--column-centered">
+          <span class="h2-red">RZESZÓW SPEED CAR</span>
+          <div class="about--short-desc">
+            <p>
+              <strong>
+                Speed Car Service oferuje wsparcie z zakresu mechaniki,
+              </strong>
+              w której skład wchodzi m.in. naprawa układów napędowych, układów
+              hamulcowych, układu zawieszenia i przekładni kierowniczej, układu
+              paliwowego, klimatyzacji, układu wydechowego, diagnostyki i
+              elektroniki oraz innych elementów. Serwis jest wyposażony w
+              profesjonalny sprzęt warsztatowy i narzędzia do codziennej pracy
+              nawet przy najbardziej skomplikowanych naprawach.
+            </p>
+            <p>
+              Współpracujemy z dostawcami części motoryzacyjnymi, które
+              gwarantują części zamienne w konkurencyjnych rynkowych cenach.
+              Dzięki współpracy z największymi hurtowniami motoryzacyjnymi mamy
+              dostęp do praktycznie każdej części
+              <strong> w ciągu maksymalnie 24 godzin. </strong>
+              W każdym przypadku podchodzimy indywidualnie do klienta wybierając
+              tylko części renomowanych firm, które w wyniku długoletniego
+              doświadczenia możemy polecić oraz dać gwarancję producenta.
+            </p>
+          </div>
+        </div>
+        <div class="about--image">
+          <img src="./img/car-mechanic.jpg" alt="" />
+        </div>
+      </div>
+      <div class="about--sub flex--column-centered">
+        <h3>SPECJALIŚCI NA RYNKU OD 20 LAT</h3>
+        <div class="about--sub-desc">
+          <p>
+            Otwarcie serwisu odbyło się we <strong> wrześniu 2022 </strong>
+            i od razu pragniemy zaznaczyć, że nie jesteśmy nowicjuszami w
+            dziedzinie mechaniki pojazdowej. Pomysł otwarcia własnego warsztatu
+            zapoczątkowała decyzja o zamknięciu jednego z największych serwisów
+            samochodowych w regionie, zlokalizowanego w podrzeszowskim Tyczynie.
+          </p>
+          <p>
+            Grupa najlepszych fachowców, którzy tam pracowali przez kilkanaście
+            lat na różnych stanowiskach, w obliczu nieuniknionego postanowiła
+            połączyć siły i otworzyć własny warsztat. Warsztat, w którym będą
+            mogli wykorzystać wiedzę, doświadczenie i pasję do realizacji
+            dalszej kariery zawodowej. Zespół tworzą osoby, które w wieloletniej
+            karierze zajmowały funkcje takie jak:
+            <strong>
+              Mistrz Serwisu, Główny Mechanik, Kierownik Zmiany, Główny
+              Elektryk, Specjalista ds. Obsługi Biura Klientów.
+            </strong>
+          </p>
+          <p>
+            Doświadczenie zespołu to także wieloletnia kariera w Autoryzowanych
+            Serwisach Obsługi renomowanych marek aut na mapie Rzeszowa, którzy
+            mają ugruntowaną i wpojoną wiedzę w zakresie najwyższych standardów
+            obsługi klienta. Naszą idea była prosta, tworzymy zespół tylko z
+            najlepszymi ludźmi, którzy pokazali pełen profesjonalizm w
+            codziennej pracy nieprzerwanie przez długie lata. Tylko dzięki tak
+            solidnym podstawom możemy zagwarantować naszym klientom jakość na
+            każdym etapie współpracy.
+          </p>
+        </div>
+      </div>
+      <div class="about--sub flex--column-centered">
+        <h3>CO NAS WYRÓŻNIA</h3>
+        <div class="about--sub-desc">
+          <p>
+            <strong>
+              Usuwamy usterki z pojazdów o rożnym stopniu zaawansowania
+              technicznego,
+            </strong>
+            dzięki czemu z naszych usług mogą̨ korzystać́ klienci indywidualni
+            oraz właściciele małych i średnich przedsiębiorstw, których flota
+            narażona jest na intensywną eksploatację.
+          </p>
+
+          <p>
+            Naprawa samochodów wykonywana w naszym warsztacie poprzedzona jest
+            <strong> wnikliwą i szczegółową diagnostyką, </strong>
+            którą przeprowadza wykwalifikowany personel. Każdy mechanik
+            samochodowy posiada fachową wiedzę, pozwalającą na ustalenie
+            przyczyny usterki, a tym samym wymianę̨ konkretnego elementu
+            odpowiedzialnego za nieprawidłową pracę pojazdu. Nasze profesjonalne
+            podejście wpływa na ograniczenie wydatków przeznaczanych na zbędne
+            części czy naprawy.
+          </p>
+        </div>
+      </div>
+      <div class="about--sub flex--column-centered">
+        <h3>NASZE ZALETY</h3>
+        <div class="about--sub-desc pros">
+          <ul>
+            <li>
+              <h4>RZETELNOŚĆ I WIARYGODNOŚĆ</h4>
+              <p>
+                Każdy z nas wie, że zawód mechanika jest bardzo nisko w rankingu
+                zawodów zaufania społecznego. Wynika to z wielu czynników. Z
+                pewnością każdy z nas ma przynajmniej kilka niemiłych wspomnień
+                związanych z naprawą swojego auta w warsztatach samochodowych.
+                Wielu mechaników wykorzystuje ograniczoną wiedzę klientów do
+                szybkiego zarobku, a etyka zawodowa schodzi na dalszy plan.
+                Niestety nieuczciwe praktyki rzutują na reputację całej branży.
+                Doskonale wiemy, że to działania na krótką metę, dopóki klient
+                raz się zrazi i już więcej nie skorzysta z usług ponownie, co
+                więcej nie poleci serwisu nikomu więcej. Dlatego naszą misją w
+                codziennej pracy, jest dbałość o długofalowe relacje z
+                klientami, którzy mogą nam zaufać i mieć przekonanie, że
+                traktujemy ich tak samo jakbyśmy tego też oczekiwali.
+              </p>
+            </li>
+            <li>
+              <h4>KONKURENCYJNE CENY</h4>
+              <p>
+                Wielokrotnie słyszymy, że klient otrzymał wycenę naprawy w innym
+                warsztacie dużo taniej, co doskonale rozumiemy, ale też za
+                każdym razem informujemy, jeśli problem jest bardziej złożony
+                niż się wydaje, żeby potwierdzili końcowy koszt po naprawie w
+                innym warsztacie, czy nie odbiega od pierwszej wyceny. W
+                rezultacie często okazuje się, że koszt jest zbliżony do naszej
+                wyceny, ze względu na nietypowy element części zamiennej i
+                klient realizuje naprawę u nas, którego ponownie witamy z
+                uśmiechem. My kontynuujemy swoją misję, nie dajemy się
+                sprowokować poprzez licytację z innymi warsztatami. Stawiamy na
+                własne zasoby, jesteśmy w tej branży bardzo długo i obcy nam
+                jest skok na kasę klientów.
+              </p>
+            </li>
+            <li>
+              <h4>TERMINOWOŚĆ</h4>
+              <p>
+                Czas to pieniądz jak mówi powiedzenie. Podobnie jest u nas, od
+                pierwszego kontaktu telefonicznego, po przyjęcie auta, jego
+                naprawę i z powrotem wydanie. Zależy nam, aby nie ograniczać
+                klientom mobilności, bo w zdecydowanej większości ludzi, bez
+                auta - jak bez ręki albo nogi. Dlatego staramy się planować
+                pracę w sposób miarodajny, terminowy na podstawie
+                przeprowadzonej diagnostyki, podając dokładny czas odbioru
+                gotowego auta. Zdarzają się też problemy ujawnione w trakcie
+                naprawy, które nie były do wychwycenia na pierwszy rzut oka, ani
+                przez komputer diagnostyczny i klienci je rozumieją. Nie mamy
+                zamiaru naciągać klientów na dodatkowe koszty, tylko
+                transparentnie przekazujemy informacje na bieżąco, aby klient
+                mógł się zastanowić i jeśli potrzebuje skonsultować, aby
+                ostatecznie zdecydować o zleceniu naprawy ujawnionej nowej
+                usterki.
+              </p>
+            </li>
+            <li>
+              <h4>PASJA</h4>
+              <p>
+                Powszechnie wiadomo, że zajęcia, których się podejmujemy, które
+                sprawiają nam radość są wykonywane z dużą starannością, chętniej
+                do nich wracamy, ciągle doskonalimy umiejętności, aż w końcu
+                stajemy się mistrzami w danej dziedzinie. Możliwość łączenia
+                pasji z pracą codzienną powoduje, że zawód wykonywany przestaje
+                być codzienną udręką. U nas jest podobnie. Kochamy to co robimy
+                i nawet w słabsze dni potrafimy zagryźć zęby, aby doprowadzić
+                sprawy do końca bez względu na poziom trudności. Chcemy, aby
+                nasi klienci mieli świadomość, że nie zostawimy ich z problemami
+                na lodzie, tylko zawsze szukamy optymalnego rozwiązania.
+              </p>
+            </li>
+            <li>
+              <h4>FACHOWOŚĆ</h4>
+              <p>
+                Zbudowaliśmy zespół w oparciu o umiejętności, kompetencje,
+                długoletnie doświadczenie w branży po to, aby zapewnić jakość
+                wykonywanych usług. Nie ma przypadkowych osób. Wiemy, że możemy
+                zawsze na sobie polegać i owszem zdarzają się sytuacje, kiedy do
+                jednego auta podchodzą wszyscy mechanicy, zostawiając chwilowo
+                naprawiane inne auto, po to, aby w trudnych przypadkach upewnić
+                się jednomyślnie co jest przyczyną usterki. Kierujemy się
+                zasadą, kilka razy sprawdzam, raz robię, a nie na odwrót metodą
+                prób i błędów, kiedy licznik nabija kolejne koszty. Obsługujemy
+                klientów, którzy odwiedzili już kilka innych warsztatów, którzy
+                sobie nie poradzili z zbyt skomplikowaną usterką, co gorsza
+                problem pogłębili. Staramy się uratować sytuację i wyjść obronną
+                ręką, nie dobijając klientów kolejnymi horrendalnymi kosztami.
+                Nasi mechanicy nie wypuszczą żadnego auta, które nie zostanie
+                postawione na koła, bo rozwiązywanie ciężkich problemów tylko
+                pobudza ich ambicje i tym właśnie jest fachowość.
+              </p>
+            </li>
+            <li>
+              <h4>WSZECHSTRONNOŚĆ</h4>
+              <p>
+                Jeśli zapytacie naszych fachowców co najbardziej lubią w swojej
+                pracy, to prawdopodobnie odpowiedzą, że nudzili się w swojej
+                karierze 0 dni. Nasi eksperci zetknęli się z wieloma usterkami
+                nie do naprawienia bez względu na rodzaj pojazdu i kraj
+                pochodzenia - czy to auta osobowe, dostawcze, terenowe,
+                specjalistyczne jak wozy strażackie, klasyki, nowoczesne
+                naszpikowane technologią czy sportowe, to jednak każdy kolejny
+                przypadek jest inny i przynosi nowe wyzwanie. Wyzwanie, które
+                podejmują i z nim sobie radzą, wykorzystując posiadaną wiedzę,
+                jednocześnie nie popadając w rutynę.
+              </p>
+            </li>
+            <li>
+              <h4>KOMPETENTNOŚĆ</h4>
+              <p>
+                W warunkach globalnego rynku, gdzie koncerny motoryzacyjne
+                opracowują coraz śmielsze rozwiązania techniczne stosowane w
+                autach, serwisy muszą dotrzymać kroku i ciągle poszerzać wiedzę,
+                aby obsłużyć coraz to nowsze pojazdy. W dobie szeroko pojętej
+                cyfryzacji dostęp do wiedzy specjalistycznej, która przykładowo
+                jest publikowana przez eksperta zza oceanu, w różnym języku, w
+                połączeniu z Google Tłumacz, nie stanowi już żadnej bariery w
+                poszerzaniu kompetencji fachowców. Wręcz przeciwnie, czerpią
+                wiedzę pełnymi garściami. Co kiedyś było ograniczone, teraz nie
+                stanowi problemu poza inicjatywą ludzi, którzy chcą ją nabyć, a
+                takich właśnie mamy, którzy na co dzień zajmują się Państwa
+                pojazdami.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="services--info services--contact hero--polygon-bottom">
+      <div class="polygon--text-bottom">
+        <h3>POTRZEBUJESZ NAPRAWY?</h3>
+        <div class="btn__services custom-btn btn-11">
+          <a href="kontakt.html">NAPISZ DO NAS</a>
+        </div>
+      </div>
+    </div>
+    <!-- ########################### -->
+    <!-- ######  MAIN SECTION END ###### -->
+    <!-- ########################### -->
+
+    <footer class="page--margin">
+      <div class="left">
+        <div class="details">
+          <h1>Kontakt</h1>
+          <div class="contact--details">
+            <ul>
+              <li class="name rel">
+                <ion-icon
+                  name="car-sport-outline"
+                  class="footer-icon"
+                ></ion-icon>
+                <span class="footer-text">Speed Cars Service</span>
+              </li>
+              <li class="tel rel">
+                <ion-icon name="call-outline" class="footer-icon"></ion-icon>
+                <a href="tel:730731046" class="footer-text">+48 661 770 012</a>
+              </li>
+              <li class="tel rel">
+                <ion-icon name="call-outline" class="footer-icon"></ion-icon>
+                <a href="tel:730731046" class="footer-text">+48 730 731 046</a>
+              </li>
+              <li class="email rel">
+                <ion-icon
+                  name="mail-open-outline"
+                  class="footer-icon"
+                ></ion-icon>
+                <a href="mailto:biuro@rzeszowspeedcar.pl" class="footer-text"
+                  >biuro@rzeszowspeedcar.pl</a
+                >
+              </li>
+              <li class="adress rel">
+                <ion-icon
+                  name="navigate-outline"
+                  class="footer-icon"
+                ></ion-icon>
+                <span class="footer-text">ul. Wspólna 1, 35-205 Rzeszów</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="mobile-hours">
+          <h1>Godziny otwarcia</h1>
+          <div class="hours--details">
+            <h2>Poniedziałek - Sobota</h2>
+            <p>7:00 - 18:00</p>
+          </div>
+        </div>
+      </div>
+      <div class="mid">
+        <div class="stripe"></div>
+        <div class="footer__cta">
+          <a href="#" class="footer-text">Start</a>
+          <a href="#" class="footer-text">O nas</a>
+          <a href="#" class="footer-text">Usługi</a>
+          <a href="#" class="footer-text">Kontakt</a>
+        </div>
+      </div>
+      <div class="right">
+        <div id="map" class="map"></div>
+      </div>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

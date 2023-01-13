@@ -1,0 +1,725 @@
+@media (max-width: 123em) {
+  html {
+    font-size: 47%;
+  }
+
+  .nav__navigation ul {
+    gap: 2rem;
+  }
+
+  .more-questions p {
+    font-size: 5rem;
+  }
+  .hero--polygon-top {
+    /* clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%); */
+    clip-path: polygon(0 0%, 100% 0%, 100% 40%, 0 60%);
+    height: 30rem;
+  }
+
+  .polygon--text {
+    top: -7rem;
+  }
+  .services--info h2 {
+    font-size: 6rem;
+  }
+}
+
+@media (max-width: 87em) {
+  header {
+    /* padding: 3rem 7rem; */
+  }
+  .logo--text--inner {
+    /* width: 20rem; */
+  }
+
+  .brand__name {
+    font-size: 2.4rem;
+  }
+
+  .brand__name--sub {
+    display: none;
+  }
+
+  .details__container {
+    display: none;
+  }
+  .header__navigation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.95);
+    width: 100vw;
+    height: 100vh;
+    z-index: 999998;
+    transform: translateX(100%);
+
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
+
+    opacity: 0;
+
+    pointer-events: none;
+
+    visibility: hidden;
+  }
+
+  .nav__navigation ul {
+    flex-direction: column;
+    font-size: 8rem;
+    justify-content: flex-start;
+    gap: 17rem;
+    font-weight: 600;
+  }
+
+  .active--card.ease-out::before {
+    transform: scaleX(0);
+  }
+
+  .nav-mobile {
+    display: block;
+    z-index: 999999;
+  }
+
+  .nav-mobile__close {
+    display: none;
+  }
+
+  .open--nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav--open .nav-mobile__close {
+    display: block;
+  }
+
+  .left--text {
+    max-width: 80rem;
+  }
+
+  .text--1,
+  .text--2 {
+    font-size: 5rem;
+  }
+
+  #section--1 {
+    flex-direction: column;
+    padding: 10rem 5rem;
+    max-width: 95rem;
+    align-items: flex-start;
+    margin: 0 auto;
+  }
+
+  .section--padding {
+    padding: 0;
+  }
+
+  .gap--first {
+    gap: 5rem;
+  }
+  .hero--client__form {
+    max-width: 100%;
+  }
+
+  .hero--client__form ul {
+    /* flex-wrap: wrap;
+    height: 50%; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .hero--client__form ul li p {
+    font-size: 2.4rem;
+  }
+  .check_box {
+    padding: 1.6rem;
+  }
+
+  .section--services {
+    width: 100vw;
+    padding: 4rem 5rem;
+  }
+
+  .services--container {
+    width: 80%;
+    margin-bottom: 12rem;
+  }
+  .service:nth-child(3) {
+    margin-top: 10rem;
+  }
+
+  #section--faq {
+    flex-direction: column;
+    padding: 5rem 10rem;
+  }
+
+  .more-questions {
+    height: 50rem;
+    margin-bottom: 10rem;
+    padding: 12rem 0;
+    text-align: center;
+  }
+
+  /* //////////////////// */
+  /* USLUGI */
+  /* //////////////////// */
+  .all-services--text {
+    flex: 2;
+  }
+  /* //////////////////// */
+  /* O NAS */
+  /* //////////////////// */
+  .hero--polygon-top {
+    /* clip-path: polygon(0 0, 100% 0, 100% 32%, 0 59%); */
+    clip-path: polygon(0 0, 100% 0, 100% 60%, 0 85%);
+    height: 20rem;
+  }
+  .polygon--text {
+    top: -2rem;
+  }
+
+  .about--top {
+    /* max-width: 100rem; */
+    flex-direction: column;
+    max-width: 135rem;
+    align-items: center;
+  }
+
+  .about--top {
+  }
+  .about--landing {
+    max-width: inherit;
+  }
+
+  .about--image {
+    height: 50rem;
+    width: 100%;
+  }
+  .about--image img {
+    right: 0;
+    top: 5rem;
+    transform: scale(120%);
+  }
+  .hero--polygon-bottom {
+    clip-path: polygon(0 41%, 100% 18%, 100% 100%, 0 100%);
+  }
+  .polygon--text-bottom {
+    flex-direction: column;
+    margin-top: 10rem;
+    bottom: -1rem;
+    gap: 1rem;
+  }
+  .services--contact a,
+  .services--contact h3 {
+    font-size: 5rem;
+    text-align: center;
+  }
+
+  /* ///////// */
+  /* KONTAKT */
+  /* ///////// */
+
+  .contact--section {
+    width: 60vw;
+  }
+  .form--contact-info {
+    padding: 7rem 4rem;
+    left: -20rem;
+    /* top: 17rem; */
+  }
+}
+
+@media (max-width: 59em) {
+  :root {
+  }
+
+  .nav__navigation ul {
+    font-size: 6rem;
+  }
+
+  .hero--client__form ul {
+    /* font-size: 3rem; */
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .check_box {
+    font-size: 3.6rem;
+  }
+
+  .service:nth-child(2) {
+    margin-top: 10rem;
+  }
+
+  .service {
+    height: 100%;
+    padding: 7rem 4rem 4rem 4rem;
+  }
+
+  .opony::after,
+  .klucz::after,
+  .silnik::after {
+    width: 10rem;
+    top: -5rem;
+  }
+  .mechanic--counter {
+    flex-direction: column;
+    height: 100%;
+    padding: 8rem 5rem;
+  }
+
+  .counter--introduction {
+    width: fit-content;
+    font-size: 6rem;
+  }
+
+  .counter--items {
+    /* flex-direction: column; */
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+  /* Footer */
+  footer {
+    flex-direction: column;
+    height: 80rem;
+  }
+  .mobile-hours {
+    display: block;
+    text-align: center;
+  }
+
+  .mobile-hours h1 {
+    text-align: center;
+    margin-bottom: 1.4rem;
+  }
+  .hours--details h2 {
+    font-size: 2.6rem;
+    margin-bottom: 0.6rem;
+    text-align: center;
+  }
+
+  .hours--details p {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  .left {
+    gap: 8rem;
+    align-items: flex-start;
+  }
+  .page--margin {
+    padding: 6rem 3rem;
+  }
+  .contact--details ul {
+    gap: 0.7rem;
+    margin-bottom: 6rem;
+  }
+  .left .details h1,
+  .mobile-hours h1 {
+    font-size: 4rem;
+  }
+  .mid {
+    display: none;
+  }
+
+  .right {
+    height: 20rem;
+    width: 80vw;
+  }
+
+  #map {
+    height: 100%;
+    width: 100%;
+  }
+  .footer-text,
+  .footer-text:link {
+    font-size: 3rem;
+  }
+
+  .footer-icon {
+    font-size: 4rem;
+  }
+
+  .all-services {
+    height: 65rem;
+  }
+
+  /* ///////// */
+  /* O NAS */
+  /* ///////// */
+
+  .services--info h2 {
+    font-size: 6rem;
+  }
+
+  /* ///////// */
+  /* KONTAKT */
+  /* ///////// */
+
+  .contact--section {
+    padding: 7rem 5rem;
+    /* width: inherit; */
+    /* max-width: 85rem; */
+  }
+
+  .form--contact-info {
+    display: none;
+  }
+
+  .form--inputs h2 {
+    text-align: center;
+  }
+
+  .btn--submit-contact {
+    /* display: flex; */
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2.6rem;
+  }
+}
+
+@media (max-width: 46em) {
+  :root {
+    --brands--size: 30rem;
+    --brands--height: 10rem;
+    --brands--count: 7;
+  }
+
+  .nav__navigation ul {
+    font-size: 5rem;
+    gap: 8rem;
+  }
+
+  .hero--client__form ul {
+    display: flex;
+  }
+  .hero--client__form ul li p {
+    font-size: 2.6rem;
+  }
+
+  .hero--description,
+  .hero--heading,
+  .hero--short,
+  .hero--subdesc {
+    text-align: center;
+  }
+
+  .left--text {
+    left: -5%;
+  }
+  .brand--info {
+    padding-top: 5rem;
+  }
+
+  .slider--padding {
+    padding: 5rem 5rem;
+  }
+
+  .slider::before,
+  .slider::after {
+    width: 10rem;
+  }
+  .slider {
+    height: 100%;
+  }
+
+  .accordion-content {
+    text-align: center;
+  }
+
+  .left {
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  .mobile-hours {
+    margin-bottom: 8rem;
+  }
+  /* /////////////// */
+  /* USLUGI */
+  /* /////////////// */
+  .all-services {
+    height: 70rem;
+    flex-direction: column;
+    margin-bottom: 15rem;
+  }
+  .all-services--img {
+    height: 20rem;
+  }
+
+  .all-services--text ul {
+    max-height: 60rem;
+  }
+
+  /*  */
+  .about--sub {
+    padding: 5rem 5rem;
+    max-width: 60rem;
+  }
+  .about--top,
+  .about--sub {
+    max-width: 75vw;
+  }
+  .about--sub h3 {
+    padding: 0 5rem;
+    font-size: 4rem;
+    font-weight: 600;
+  }
+  .about--sub-desc p,
+  .about--short-desc p {
+    text-align: center;
+  }
+
+  .about--image img {
+    top: 3rem;
+    transform: scale(130%);
+  }
+
+  .h2-red {
+    font-size: 5rem;
+  }
+
+  .about--section {
+    padding: 0 4rem;
+  }
+
+  .hero--polygon-bottom {
+    clip-path: polygon(0 30%, 100% 18%, 100% 100%, 0 100%);
+  }
+
+  /* ///////// */
+  /* KONTAKT */
+  /* ///////// */
+
+  .contact--section {
+    /* max-width: 60rem; */
+  }
+
+  .usluga-opis--text {
+    max-width: 85%;
+  }
+
+  .usluga-opis--img img {
+    height: 35rem;
+  }
+
+  .usluga-opis--text h1 {
+    font-size: 5rem;
+  }
+  .usluga-opis--text h2 {
+    font-size: 3.2rem;
+  }
+
+  .usluga-opis--text p {
+    text-align: start;
+  }
+
+  .usluga-opis--text {
+    max-width: 100%;
+  }
+}
+
+/* ########## */
+/* 512px - smartphones */
+@media (max-width: 32em) {
+  html {
+    /* font-size: 40%; */
+  }
+  :root {
+    --brands--size: 24rem;
+    --brands--height: 10rem;
+    --brands--count: 7;
+  }
+  header {
+    padding: 3rem 2rem;
+    height: 10rem;
+  }
+
+  .logo--text {
+    max-width: 25rem;
+  }
+
+  .nav-mobile__icon {
+    font-size: 5rem;
+  }
+
+  .text--2 {
+    font-size: 3rem;
+  }
+
+  .hero__section {
+    height: 33rem;
+  }
+
+  .more__button {
+    width: 100%;
+  }
+
+  .mechanic--counter {
+    gap: 4rem;
+  }
+
+  #section--faq {
+    padding: 5rem 3rem;
+  }
+
+  .container {
+    padding: 0;
+  }
+
+  .accordion button[aria-expanded="true"] + .accordion-content {
+    max-height: 15em;
+  }
+
+  .left .details h1,
+  .mobile-hours h1 {
+    /* font-size: 3rem; */
+  }
+
+  .contact--details ul {
+    gap: 0.7rem;
+    margin-bottom: 1rem;
+  }
+  .footer-text,
+  .footer-text:link {
+    font-size: 2rem;
+  }
+
+  .footer-icon {
+    font-size: 3rem;
+  }
+  /*  */
+  .about--sub {
+    padding: 5rem 5rem;
+    /* max-width: 45rem; */
+  }
+  .about--sub h3 {
+    padding: 0 3rem;
+    /* font-size: 3.2rem; */
+  }
+  .h2-red {
+    font-size: 3.6rem;
+  }
+  .about--section {
+    padding: 0 2rem;
+  }
+
+  .pros {
+    max-width: 100%;
+  }
+  .about--sub {
+    padding: 5rem 3.6rem;
+    /* max-width: 35rem; */
+  }
+  .about--top,
+  .about--sub {
+    /* max-width: 60vw; */
+  }
+
+  .about--sub-desc ul li p {
+    /* padding: 0 3.6rem; */
+  }
+
+  .about--image {
+    height: 100%;
+    width: 100%;
+  }
+  .about--image img {
+    transform: scale(150%);
+  }
+
+  .about--short-desc p,
+  .about--sub-desc ul li p {
+    margin-left: 0;
+    font-size: 2.2rem;
+  }
+  .about--sub-desc ul li h4 {
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+    font-size: 3rem;
+  }
+
+  .about--sub-desc ul li::marker {
+    content: "";
+    /* display: inline-block; */
+  }
+
+  .about--sub-desc ul {
+    list-style: none;
+  }
+
+  .services--contact a,
+  .services--contact h3 {
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  .usluga-opis--img img {
+    height: 100%;
+    max-width: 80vw;
+  }
+
+  .usluga-opis--text h1 {
+    font-size: 4rem;
+  }
+  .usluga-opis--text h2 {
+    font-size: 3rem;
+  }
+  .usluga-opis--text p,
+  .usluga-opis--text ul {
+    font-size: 1.8rem;
+  }
+
+  .usluga-opis--container h1 ~ h2,
+  .usluga-opis--container h1 ~ p,
+  .usluga-opis--container h1 {
+    text-align: center;
+  }
+  .all-services {
+    height: inherit;
+    font-size: 2rem;
+    margin-bottom: 8rem;
+  }
+  .all-services--text ul {
+    /* padding: 2rem 0rem 5rem 0rem; */
+    padding: 0;
+    margin-bottom: 0.7rem;
+  }
+  .all-services--img {
+    flex: auto;
+    height: 20rem;
+  }
+
+  .list-of-services {
+    flex-direction: column;
+    gap: 0;
+    padding: 2rem 0;
+  }
+
+  .list-of-services ul {
+    gap: 1rem;
+  }
+
+  /* ///////// */
+  /* KONTAKT */
+  /* ///////// */
+
+  .contact--section {
+    /* max-width: 35rem; */
+    width: 80vw;
+    padding: 3rem 3rem;
+  }
+
+  .margin--bottom-1 {
+    margin-bottom: 7rem;
+  }
+}

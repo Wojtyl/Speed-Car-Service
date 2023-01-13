@@ -1,0 +1,513 @@
+/* 
+.services-container {
+  margin: 5rem;
+  border: 3px solid red;
+  width: 100%;
+}
+
+.service-type--container {
+  display: flex;
+  position: relative;
+  margin: 2rem;
+  border: 1px solid black;
+}
+.service {
+  padding: 0rem 0rem 4rem 0rem;
+  background-color: rgba(217, 217, 217, 0.335);
+}
+.service img {
+  height: 50%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 2rem;
+} */
+/* ############### */
+/* @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300,600,700,900); */
+body {
+  /* background: #dce1df; */
+  background-color: #efefef;
+
+  /* color: #4f585e; */
+  /* font-family: "Source Sans Pro", sans-serif; */
+  /* text-rendering: optimizeLegibility; */
+}
+a.btn {
+  background: var(--blue--primary);
+  border-radius: 4px;
+  box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+  display: inline-block;
+  padding: 6px 30px 8px;
+  position: relative;
+  text-decoration: none;
+  transition: all 0.1s 0s ease-out;
+}
+.no-touch a.btn:hover {
+  background: #00a2ad;
+  box-shadow: 0px 8px 2px 0 rgba(0, 0, 0, 0.075);
+  transform: translateY(-2px);
+  transition: all 0.25s 0s ease-out;
+}
+.no-touch a.btn:active,
+a.btn:active {
+  background: #008a93;
+  box-shadow: 0 1px 0px 0 rgba(255, 255, 255, 0.25);
+  transform: translate3d(0, 1px, 0);
+  transition: all 0.025s 0s ease-out;
+}
+div.cards {
+  margin: 0 auto;
+  max-width: 150rem;
+  text-align: center;
+  position: relative;
+  top: -4rem;
+}
+div.card {
+  background: #ffffff;
+  display: inline-block;
+  margin: 2rem 3.5rem;
+  max-width: 300px;
+  perspective: 1000;
+  position: relative;
+  text-align: left;
+  transition: all 0.3s 0s ease-in;
+  width: 300px;
+  z-index: 1;
+  box-shadow: rgb(0, 0, 0, 0.12) 0px 6px 13px 2px;
+}
+div.card img {
+  /* max-width: 300px; */
+  width: 100%;
+  height: 286px;
+  object-fit: cover;
+}
+div.card .card__image-holder {
+  background: rgba(0, 0, 0, 0.1);
+  height: 0;
+  padding-bottom: 75%;
+}
+div.card div.card-title {
+  background: #ffffff;
+  padding: 6px 15px 10px;
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+  /* height: 66px; */
+}
+div.card div.card-title a.toggle-info {
+  border-radius: 32px;
+  height: 32px;
+  padding: 0;
+  position: absolute;
+  right: 2rem;
+  top: 2.4rem;
+  width: 32px;
+}
+div.card div.card-title a.toggle-info span {
+  background: #ffffff;
+  display: block;
+  height: 2px;
+  position: absolute;
+  top: 16px;
+  transition: all 0.15s 0s ease-out;
+  width: 12px;
+}
+div.card div.card-title a.toggle-info span.left {
+  right: 14px;
+  transform: rotate(45deg);
+}
+div.card div.card-title a.toggle-info span.right {
+  left: 14px;
+  transform: rotate(-45deg);
+}
+div.card div.card-title h2 {
+  font-size: 3.8rem;
+  color: rgb(58, 58, 58);
+  font-weight: 500;
+  letter-spacing: -0.05em;
+  margin: 0;
+  padding: 1.5rem 0;
+}
+div.card div.card-title h2 small {
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: -0.025em;
+}
+div.card div.card-description {
+  padding: 0 15px 10px;
+  box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.075);
+  position: relative;
+  font-size: 14px;
+}
+div.card div.card-actions {
+  /* box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.075); */
+  padding: 10px 15px 20px;
+  text-align: center;
+}
+div.card div.card-flap {
+  background: #d9d9d9;
+  position: absolute;
+  width: 100%;
+  transform-origin: top;
+  transform: rotateX(-90deg);
+  box-shadow: rgb(0, 0, 0, 0.12) 0px 6px 13px 2px;
+}
+div.card div.flap1 {
+  transition: all 0.3s 0s ease-out;
+  z-index: -1;
+}
+div.card div.flap2 {
+  transition: all 0.3s 0s ease-out;
+  z-index: -2;
+}
+div.cards.showing div.card {
+  cursor: pointer;
+  opacity: 0.6;
+  transform: scale(0.88);
+}
+.no-touch div.cards.showing div.card:hover {
+  opacity: 0.94;
+  transform: scale(0.92);
+}
+div.card.show {
+  opacity: 1 !important;
+  transform: scale(1) !important;
+}
+div.card.show div.card-title a.toggle-info {
+  background: var(--red--primary) !important;
+}
+div.card.show div.card-title a.toggle-info span {
+  top: 15px;
+}
+div.card.show div.card-title a.toggle-info span.left {
+  right: 10px;
+}
+div.card.show div.card-title a.toggle-info span.right {
+  left: 10px;
+}
+div.card.show div.card-flap {
+  background: #ffffff;
+  transform: rotateX(0deg);
+}
+div.card.show div.flap1 {
+  transition: all 0.3s 0s ease-out;
+}
+div.card.show div.flap2 {
+  transition: all 0.3s 0.2s ease-out;
+}
+
+.services--info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin: 0 0 10rem 0; */
+  gap: 4rem;
+}
+
+.services--info h2 {
+  font-size: 7rem;
+}
+.services--contact {
+  font-size: 5rem;
+  width: 100%;
+  /* height: 20rem; */
+  /* background-color: #4f4f4f80; */
+  margin-bottom: 0;
+  color: #fff;
+}
+.services--contact a,
+.services--contact h3 {
+  font-size: 5rem;
+  display: block;
+  padding: 10px 25px;
+}
+
+.services--contact a:link,
+.services--contact a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+.custom-btn {
+  /* width: 100%; */
+  color: #fff;
+  border-radius: 5px;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+.btn-11 {
+  border: none;
+  /* background: rgb(251, 33, 117);
+  background: linear-gradient(
+    0deg,
+    rgba(251, 33, 117, 1) 0%,
+    rgba(234, 76, 137, 1) 100%
+  ); */
+  background-color: var(--red--primary);
+  color: #fff;
+  overflow: hidden;
+}
+.btn-11:hover {
+  text-decoration: none;
+  color: #fff;
+}
+.btn-11:before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  top: -180px;
+  left: 0;
+  width: 30px;
+  height: 100%;
+  background-color: #fff;
+  animation: shiny-btn1 3s ease-in-out infinite;
+}
+.btn-11:hover {
+  opacity: 0.7;
+}
+.btn-11:active {
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.3),
+    -4px -4px 6px 0 rgba(116, 125, 136, 0.2),
+    inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+@-webkit-keyframes shiny-btn1 {
+  0% {
+    -webkit-transform: scale(0) rotate(45deg);
+    opacity: 0;
+  }
+  80% {
+    -webkit-transform: scale(0) rotate(45deg);
+    opacity: 0.5;
+  }
+  81% {
+    -webkit-transform: scale(4) rotate(45deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(50) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+.uslugi-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6rem;
+  align-items: center;
+  justify-content: center;
+  max-width: 118rem;
+  margin: 0 auto;
+}
+
+.usluga {
+  max-width: 35rem;
+  box-shadow: rgb(0, 0, 0, 0.12) 0px 6px 13px 2px;
+  transition: all 0.2s ease-out;
+}
+
+.usluga:hover {
+  transform: translateY(-2rem);
+}
+
+.usluga:link,
+.usluga:visited {
+  text-decoration: none;
+  color: rgb(53, 53, 53);
+}
+
+.uslugi-img {
+  height: 30rem;
+  position: relative;
+}
+
+.uslugi-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.uslugi-opis {
+  background-color: #fff;
+  padding: 1rem 1rem 1rem 3rem;
+  /* height: 12rem; */
+  gap: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.uslugi-opis p {
+  font-size: 2rem;
+  font-weight: 500;
+
+  /* text-decoration: none; */
+  color: rgb(53, 53, 53);
+}
+
+.click--icon {
+  font-size: 5rem;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.usluga-opis--container {
+  max-width: 80vw;
+  margin: 8rem auto;
+}
+
+.usluga-opis--img {
+  max-width: 60%;
+}
+
+.usluga-opis--img img {
+  border-radius: 15px;
+  height: 50rem;
+  box-shadow: 10px 9px 25px 0px rgba(0, 0, 0, 0.43);
+  -webkit-box-shadow: 10px 9px 25px 0px rgba(0, 0, 0, 0.43);
+  -moz-box-shadow: 10px 9px 25px 0px rgba(0, 0, 0, 0.43);
+}
+.usluga-opis--text {
+  max-width: 70%;
+}
+
+.usluga-opis--text h1 {
+  font-size: 5rem;
+  margin: 2rem 0;
+  color: var(--red--primary);
+}
+.usluga-opis--text h2 {
+  padding-left: 2rem;
+  font-size: 3.5rem;
+  margin: 4rem 0 2rem 0;
+  color: #494848;
+}
+
+.usluga-opis--text ul {
+  padding-left: 6rem;
+  font-size: 2rem;
+  list-style-type: square;
+  color: #494848;
+}
+.usluga-opis--text ul li {
+  margin-bottom: 1rem;
+}
+
+.usluga-opis--text p {
+  padding-left: 2rem;
+  font-size: 1.8rem;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+  color: #494848;
+  text-align: justify;
+}
+.usluga-opis--text p:last-child {
+  margin-bottom: 7rem;
+}
+
+.numeric li {
+  list-style: decimal;
+}
+
+.services--heading {
+  font-size: 5rem;
+  display: block;
+  text-align: center;
+  margin: 7rem auto;
+  color: #444444;
+}
+
+.all-services {
+  font-size: 1.6rem;
+  /* max-width: 80rem; */
+  /* width: -moz-fit-content;
+  width: fit-content; */
+  height: fit-content;
+  gap: 1.8rem;
+  height: 60rem;
+  /* background-color: var(--blue--primary); */
+  background-image: linear-gradient(#213354df, #213354df),
+    url(/img/services-5v2.jpg);
+  /* filter: blur(10px); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 10rem;
+}
+
+.all-services--text p {
+  font-size: 3rem;
+  font-weight: 600;
+  position: relative;
+  /* text-align: center; */
+}
+
+.all-services--text {
+  height: fit-content;
+  flex: 1;
+  height: 100%;
+  padding: 3rem 5rem;
+  backdrop-filter: blur(7px);
+}
+
+/* .all-services--text ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100%;
+  padding: 2rem 5rem 5rem 5rem;
+  list-style: circle;
+  gap: 1rem;
+} */
+
+.list-of-services {
+  display: flex;
+  height: 95%;
+  gap: 1.5rem;
+}
+
+.list-of-services ul {
+  height: 100%;
+  /* padding: 2rem 5rem 5rem 5rem; */
+  padding: 2rem;
+  list-style: circle;
+  /* gap: 3rem; */
+  /* margin-bottom: 3rem; */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.list-of-services ul li {
+  /* max-width: 45%; */
+}
+
+.all-services--img {
+  flex: 1;
+}
+.all-services img {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  object-fit: cover;
+  /* right: 0; */
+}
+
+.services--top {
+  display: none;
+}

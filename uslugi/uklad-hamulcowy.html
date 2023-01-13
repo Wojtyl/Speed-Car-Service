@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style_template.css" />
+    <link rel="stylesheet" href="../css/general.css" />
+    <link rel="stylesheet" href="../css/animation.css" />
+    <link rel="stylesheet" href="../css/uslugi.css" />
+    <link rel="stylesheet" href="../css/faq.css" />
+    <link rel="stylesheet" href="../css/queries.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Reem+Kufi+Ink&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.1/dist/leaflet.css"
+      integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.1/dist/leaflet.js"
+      integrity="sha256-NDI0K41gVbWqfkkaHj15IzU7PtMoelkzyKp8TOaFQ3s="
+      crossorigin=""
+    ></script>
+    <script defer src="../js/map.js"></script>
+    <script defer src="../js/script.js"></script>
+    <!-- <script defer src="./js/services.js"></script> -->
+    <script defer src="../js/services.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <title>Speed Cars Service | Rzeszów</title>
+  </head>
+  <body id="bodyy">
+    <!-- HEADER SECTION -->
+
+    <header class="header">
+      <!-- <div class="header__details page--margin"> -->
+      <div class="logo--text">
+        <img src="../img/logo.svg" alt="Logo warsztatu" class="logo--svg" />
+        <div class="logo--text--inner">
+          <p class="brand__name">SPEED CAR SERVICE</p>
+          <p class="brand__name--sub">
+            Najlepszy Mechanik Samochodowy w Rzeszowie
+          </p>
+        </div>
+      </div>
+      <div class="header__navigation">
+        <nav class="nav__navigation">
+          <ul>
+            <!-- <li
+                class="nav__element hvr-icon hvr-bounce-to-right hover-white-font"
+              > -->
+            <li class="nav__element ease-out">
+              <a href="../index.html" class="nav__button btn--home">Start</a>
+            </li>
+            <li class="nav__element ease-out">
+              <a href="../o-nas.html" class="nav__button">O nas</a>
+            </li>
+            <li class="nav__element ease-out active--card">
+              <a href="../uslugi.html" class="nav__button">Usługi</a>
+            </li>
+            <li class="nav__element ease-out">
+              <a href="../kontakt.html" class="nav__button">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="details__container">
+        <div class="contact__container space--4">
+          <ion-icon name="call-outline" class="icon"></ion-icon>
+          <div class="contact--div">
+            <p class="text-1">Zadzwoń teraz!</p>
+            <div class="contact-tels">
+              <p class="text-2">+48 661 770 012</p>
+              <p class="text-2">+48 730 731 046</p>
+            </div>
+          </div>
+        </div>
+        <div class="hours__container space--">
+          <ion-icon name="time-outline" class="icon"></ion-icon>
+          <div>
+            <p class="text-1">Godziny otwarcia</p>
+            <p class="text-2">10:00 - 18:00</p>
+            <p class="text-2">pon - sob</p>
+          </div>
+        </div>
+      </div>
+      <div class="nav-mobile">
+        <ion-icon name="menu-outline" class="nav-mobile__icon"></ion-icon>
+        <ion-icon name="close-outline" class="nav-mobile__close"></ion-icon>
+      </div>
+      <!-- </div> -->
+    </header>
+
+    <!-- ########################### -->
+    <!-- ######  MAIN SECTION ###### -->
+    <!-- ########################### -->
+
+    <!-- <div class="services--info hero--polygon-top">
+      <h2 class="hero--heading polygon--text">Układ napędowy</h2>
+    </div> -->
+
+    <div class="usluga-opis--container">
+      <div class="usluga-opis--img">
+        <img src="../img/car-brake.jpg" alt="" />
+      </div>
+      <div class="usluga-opis--text">
+        <h1>Układ hamulcowy</h1>
+        <h2>Naprawa układu hamulcowego</h2>
+        <p>
+          Skuteczność prawidłowego działania układu hamulcowego uzależniona jest
+          od wzajemnej współpracy wielu elementów:
+          <strong>
+            zbiornik wyrównawczy, pompa hamulcowa, zaciski z tłoczkami, tarcze i
+            klocki lub bębny oraz przewody (miękkie i sztywne)
+          </strong>
+          , gdzie krąży płyn hamulcowy.
+        </p>
+        <p>
+          W sytuacji kiedy tylko jeden z elementów ulegnie uszkodzeniu (nawet
+          jeśli pozostałe są sprawne), gdy dochodzi do wycieku płynu,
+          <strong> cały układ ulega awarii. </strong>
+
+          W tej sytuacji wciskanie pedału nie daje rezultatu, ponieważ brakuje
+          przełożenia na tłoczki. Auto przestaje hamować.
+        </p>
+        <p>
+          Żywotność przewodów sztywnych to
+          <strong> 10-15 lat. </strong>
+
+          Giętkie przewody wymagają częstszych wymian, gdyż guma traci swoje
+          właściwości. Sprzyjającymi warunkami uszkodzeń przewodów hamulcowych
+          są zarówno czynniki zewnętrzne (sól, kamyki, wilgoć, zmienne
+          temperatury) jak i mechaniczne. Trzeba pamiętać o regularnej wymianie
+          płynu hamulcowego, aby zachować trwałość przewodów. Objawami
+          świadczącymi o konieczności wymiany przewodów jest min.
+          <strong>
+            słabsza siła hamowania, wyciek płynu zauważalnego pod autem lub na
+            zaciskach.
+          </strong>
+        </p>
+        <h2>Naprawa hamulca ręcznego</h2>
+        <p>
+          Hamulec ręczny pełni funkcję
+          <strong> hamulca awaryjnego </strong>
+
+          , który umożliwia zatrzymanie pojazdu w sytuacji, gdy zepsuje się
+          hamulec główny. Ponadto używa się go do zabezpieczenia zaparkowanego
+          auta na wzniesieniu, ponieważ
+          <strong>
+            pozostawienie pojazdu na biegu nie gwarantuje, że się nie stoczy z
+            powierzchni o dużym kącie nachylenia.
+          </strong>
+
+          Skrzynia biegów jest bardziej obciążona i powoduje ryzyko wyskoczenia
+          biegu. Dlatego sprawne działanie hamulca ręcznego jest ważne.
+          Zbudowany jest z dźwigni znajdującej się pomiędzy fotelem kierowcy i
+          pasażera, oraz linek, które po pociągnięciu powodują zaciśnięcie
+          hamulców z tyłu i unieruchomienie samochodu.
+        </p>
+
+        <p>
+          Do najczęstszych usterek możemy zaliczyć:
+          <strong>
+            rozregulowanie całego układu, zużycie bębna, uszkodzenie lub
+            zapieczenie się śruby regulującej.
+          </strong>
+
+          Powodem nietrzymania hamulca też bardzo często jest rdza,
+          wyeksploatowane sprężyny powrotne oraz inne elementy składowe
+        </p>
+
+        <h2>Wymiana klocków hamulcowych</h2>
+        <p>
+          Klocki to jedne z ważniejszych części całego układu. Wymiana powinna
+          następować w momencie, gdy grubość jest mniejsza niż 3 mm, ale też,
+          gdy okładzina się zaczyna kruszyć, pękać lub jest nierównomiernie
+          zużyta po jednej stronie.
+
+          <strong>
+            O zużyciu klocków i konieczności natychmiastowej ich wymiany
+            świadczą metaliczne piski,
+          </strong>
+
+          które wynikają z budowy klocków, gdzie są wbudowane specjalne blaszki,
+          informujące o kończącej się warstwie ciernej lub po prostu zapalanie
+          się kontrolki na desce rozdzielczej - auta z elektronicznymi
+          czujnikami grubości klocków.
+        </p>
+
+        <h2>Wymiana tarcz hamulcowych</h2>
+        <p>
+          Hamulce są kluczowe w bezpiecznym poruszaniu się pojazdem i od
+          sprawności układu uzależniona jest długość drogi hamowania, co jest
+          ogromnie ważne kiedy o możliwym wypadku decydują centymetry. Tarcze
+          nie wymagają częstych wymian jak klocki. Istotne jest natomiast, że
+          jeśli decydujemy się na wymianę tarcz to samo powinniśmy zrobić z
+          klockami. Zawsze wskazana jest wymiana obu tarcz tej samej osi.
+          Standardowo przyjmuje się, że
+          <strong> tarcze wytrzymują około 100 tys. kilometrów. </strong>
+
+          Jest to zależne od stylu jazdy: jazda dynamiczna w mieście wymusza
+          częste hamowanie, które skraca żywotność tarcz. Kiedy zatem decydować
+          się na wymianę tarcz? Pierwsza zauważalna oznaka to
+          <strong> widoczny wokół tarcz rant </strong>
+
+          (środek tarczy się wyciera), a zewnętrzna część zużywa się dużo mniej.
+          Przesadnie cienka tarcza szybciej się nagrzewa w rezultacie powoduje
+          mniejszą skuteczność hamowania. Objawy podnoszące alarm to:
+          <strong>
+            wibracje przy hamowaniu, pulsowanie pedału hamulca czy drgania
+            kierownicy.
+          </strong>
+        </p>
+        <p>
+          Do uszkodzenia tarcz dochodzi również wtedy, gdy rozgrzane tarcze
+          ulegają gwałtownemu schłodzeniu przykładowo jeśli po dynamicznej
+          jeździe wjedziemy od razu na myjnię. Po montażu nowych tarcz, przez
+          pierwsze kilkadziesiąt kilometrów,
+          <strong> jazda powinna być łagodna, </strong>
+
+          aby nowe elementy (w tym również klocki) mogły się ułożyć i nie były
+          poddawane na zbyt mocne i gwałtowne hamowanie.
+        </p>
+      </div>
+    </div>
+
+    <!-- ########################### -->
+    <!-- ######  MAIN SECTION END ###### -->
+    <!-- ########################### -->
+
+    <footer class="page--margin">
+      <div class="left">
+        <div class="details">
+          <h1>Kontakt</h1>
+          <div class="contact--details">
+            <ul>
+              <li class="name rel">
+                <ion-icon
+                  name="car-sport-outline"
+                  class="footer-icon"
+                ></ion-icon>
+                <span class="footer-text">Speed Car Service</span>
+              </li>
+              <li class="tel rel">
+                <ion-icon name="call-outline" class="footer-icon"></ion-icon>
+                <a href="tel:730731046" class="footer-text">+48 661 770 012</a>
+              </li>
+              <li class="tel rel">
+                <ion-icon name="call-outline" class="footer-icon"></ion-icon>
+                <a href="tel:730731046" class="footer-text">+48 730 731 046</a>
+              </li>
+              <li class="email rel">
+                <ion-icon
+                  name="mail-open-outline"
+                  class="footer-icon"
+                ></ion-icon>
+                <a href="mailto:biuro@rzeszowspeedcar.pl" class="footer-text"
+                  >biuro@rzeszowspeedcar.pl</a
+                >
+              </li>
+              <li class="adress rel">
+                <ion-icon
+                  name="navigate-outline"
+                  class="footer-icon"
+                ></ion-icon>
+                <span class="footer-text">ul. Wspólna 1, 35-205 Rzeszów</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="mobile-hours">
+          <h1>Godziny otwarcia</h1>
+          <div class="hours--details">
+            <h2>Poniedziałek - Sobota</h2>
+            <p>7:00 - 18:00</p>
+          </div>
+        </div>
+      </div>
+      <div class="mid">
+        <div class="stripe"></div>
+        <div class="footer__cta">
+          <a href="../index.html" class="footer-text">Start</a>
+          <a href="../o-nas.html" class="footer-text">O nas</a>
+          <a href="../uslugi.html" class="footer-text">Usługi</a>
+          <a href="../kontakt.html" class="footer-text">Kontakt</a>
+        </div>
+      </div>
+      <div class="right">
+        <div id="map" class="map"></div>
+      </div>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
