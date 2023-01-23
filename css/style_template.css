@@ -94,7 +94,7 @@ header {
 }
 
 .logo--svg {
-  height: 120%;
+  height: 180%;
 }
 
 .details__container {
@@ -314,7 +314,7 @@ header {
       var(--backgroud--dark),
       var(--backgroud--dark)
     ),
-    url("../img/samochod.jpg");
+    url("../img/samochodv2.png");
   background-size: cover;
   background-position: center;
   /* filter: grayscale(); */
