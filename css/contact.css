@@ -62,7 +62,7 @@
 }
 
 .form--contact-info h2 {
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
 .form-list {
@@ -87,8 +87,12 @@
 
 .li-header {
   font-weight: 600 !important;
-  font-size: 3rem !important;
-  margin-bottom: 1rem;
+  font-size: 3.5rem !important;
+  margin: 3rem 0;
+}
+
+.li-item {
+  margin-bottom: 0.8rem;
 }
 
 .contac--icon {
