@@ -489,7 +489,8 @@ header {
   margin-left: 1.2rem;
 }
 .opony,
-.silnik {
+.silnik,
+.klima {
   position: relative;
 }
 .opony::after {
@@ -505,13 +506,50 @@ header {
 
 .opony::after,
 .silnik::after,
-.klucz::after {
+.klucz::after,
+.klima::after,
+.wydech::after,
+.paliwo::after,
+.hamulec::after {
   position: absolute;
   width: 13rem;
   filter: invert(52%) sepia(6%) saturate(5839%) hue-rotate(315deg)
     brightness(85%) contrast(104%);
   /* height: 4rem; */
   top: -7rem;
+}
+
+.klima::after {
+  content: url(./../svg/Snow.svg);
+  width: 16rem;
+  top: -9rem;
+  left: 2rem;
+}
+
+.wydech::after {
+  content: url(./../svg/wydech.svg);
+  width: 18rem;
+  top: -9rem;
+}
+
+.paliwo::after {
+  content: url(./../svg/paliwowy.svg);
+  width: 18rem;
+  top: -9rem;
+}
+
+.hamulec::after {
+  content: url(./../svg/brake.svg);
+}
+
+.zawieszenie::after {
+  content: url(./../svg/suspension.svg);
+  position: absolute;
+  width: 18rem;
+  filter: invert(52%) sepia(6%) saturate(5839%) hue-rotate(315deg)
+    brightness(85%) contrast(104%);
+  /* height: 4rem; */
+  top: -9rem;
 }
 
 .icon--service {
