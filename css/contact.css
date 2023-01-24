@@ -118,6 +118,43 @@
   background-color: rgb(249, 35, 24);
 }
 
+.message {
+  position: fixed;
+  top: 13rem;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 8rem;
+  width: 30rem;
+  /* background-color: rgb(127, 204, 82); */
+  background-color: #41db6d;
+  border: 1px solid #1d873ba4;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  transition: opacity 0.6s ease-in-out;
+  opacity: 1;
+  /* display: block; */
+}
+
+.message {
+  font-size: 2rem;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  /* display: inlin; */
+}
+
+.message-hidden {
+  opacity: 0;
+  /* display: none; */
+}
+
+.error {
+  background-color: #d63737d5;
+  border-color: #bc2727a4;
+}
+
 @media (1150px <= width <= 1400px) {
   .contact--section {
     width: 50vw;

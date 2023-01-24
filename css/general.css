@@ -115,6 +115,10 @@
   margin-top: 10rem !important;
 }
 
+.section--sticky-margin {
+  margin-top: 18rem !important;
+}
+
 .hero--polygon-top {
   /* clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%); */
   clip-path: polygon(0 0, 100% 0, 100% 35%, 0 70%);

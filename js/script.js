@@ -3,7 +3,7 @@
 const logo = document.querySelector(".logo--text");
 
 logo.addEventListener("click", () => {
-  window.location.href = "/index.html";
+  window.location.href = "../index.html";
 });
 
 const btnScrollTo = document.querySelector(".btn--scroll-to");
@@ -13,6 +13,7 @@ const section1 = document.querySelector("#section--1");
 const section0 = document.querySelector(".hero__section");
 const usluga = document.querySelector(".usluga-opis--container");
 const services = document.querySelector(".all-services");
+const specificServices = document.querySelector(".usluga-opis--container");
 if (btnScrollTo) {
   btnScrollTo.addEventListener("click", (e) => {
     const s1coords = section1.getBoundingClientRect();
@@ -95,6 +96,22 @@ if (services) {
     }
   });
 }
+if (specificServices) {
+  console.log("keste,");
+  const initialCoords = specificServices.getBoundingClientRect();
+  const header = document.querySelector(".header");
+
+  window.addEventListener("scroll", (e) => {
+    if (window.scrollY > initialCoords.top) {
+      header.classList.add("sticky");
+      specificServices.classList.add("section--sticky-margin");
+    } else {
+      header.classList.remove("sticky");
+      specificServices.classList.remove("section--sticky-margin");
+    }
+  });
+}
+
 //FAQ
 const items = document.querySelectorAll(".accordion button");
 
