@@ -30,6 +30,11 @@ html {
   overflow-y: initial;
 }
 
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
 ul {
   list-style: none;
 }
@@ -314,7 +319,7 @@ header {
       var(--backgroud--dark),
       var(--backgroud--dark)
     ),
-    url("../img/samochodv2.png");
+    url("../img/samochodv3.png");
   background-size: cover;
   background-position: center;
   /* filter: grayscale(); */
@@ -721,7 +726,7 @@ footer {
   /* background-color: #123; */
   background-color: var(--blue--primary);
   width: 100vw;
-  height: 24rem;
+  height: 30rem;
   display: flex;
   color: #fff;
   justify-content: space-between;
@@ -741,6 +746,13 @@ footer {
   /* border: 3px solid red; */
 }
 
+.left {
+  align-items: flex-start;
+  gap: 7rem;
+  flex-basis: 12rem;
+  flex-shrink: 0;
+}
+
 .footer-text,
 .footer-text:link,
 .footer-text:visited {
@@ -750,15 +762,21 @@ footer {
   color: rgb(242, 242, 242);
 }
 
+.left-company {
+  padding-left: 2rem;
+}
+
 /* ### MID DIV */
 .mid {
   justify-content: center;
   position: relative;
+  /* flex: 2; */
 }
 
 .footer__cta {
   z-index: 0;
-  height: 80%;
+  /* height: 80%; */
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -771,7 +789,22 @@ footer {
   font-weight: 600;
 }
 
+.footer-link {
+  font-size: 2.5rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
 /* ### LEFT DIV */
+
+.details {
+  height: 100%;
+}
+
+.contact--details.company {
+  height: 100%;
+}
 
 .contact--details ul {
   display: flex;
@@ -782,6 +815,14 @@ footer {
   display: flex;
   align-items: center;
   gap: 0.7rem;
+}
+
+.company ul {
+  gap: 0.7rem;
+  /* width: 100%; */
+  height: 93%;
+  justify-content: flex-start;
+  gap: 1.1rem;
 }
 
 .details h1,
@@ -808,73 +849,3 @@ footer {
 .mobile-hours {
   display: none;
 }
-/* @media (max-width: 1553px) {
-  html {
-    font-size: 43%;
-  }
-  
-  .page--margin {
-    padding: 2rem 16rem;
-  }
-} */
-
-/* QUERY */
-
-/* @media (2000px <= width <= 2400px) {
-  html {
-    font-size: 50%;
-  }
-
-  
-}
-
-@media (1700px <= width <= 2000px) {
-  html {
-    font-size: 45%;
-  }
-
- 
-}
-
-@media (1400px <= width <= 1700px) {
-  html {
-    font-size: 38%;
-  }
-
- 
-}
-
-@media (1300px <= width <= 1400px) {
-  html {
-    font-size: 35%;
-  }
-
- 
-@media (1150px <= width <= 1300px) {
-  html {
-    font-size: 30%;
-  }
-
-
-}
-@media (995px <= width <= 1150px) {
-  html {
-    font-size: 28%;
-  }
-
-
-}
-@media (840px <= width <= 995px) {
-  html {
-    font-size: 23%;
-  }
-
-
-}
-@media (840px <= width <= 995px) {
-  html {
-    font-size: 23%;
-  }
-
-
-} */

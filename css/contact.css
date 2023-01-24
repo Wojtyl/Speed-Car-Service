@@ -62,7 +62,18 @@
 }
 
 .form--contact-info h2 {
-  margin-bottom: 7rem;
+  margin-bottom: 4rem;
+}
+
+.form-list {
+  height: 90%;
+}
+.form--contact-info ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  height: 100%;
+  justify-content: space-around;
 }
 .form--contact-info li {
   display: flex;
@@ -70,8 +81,14 @@
   gap: 2rem;
   font-weight: 500;
   /* flex-direction: column; */
-  margin-bottom: 5rem;
+  /* margin-bottom: 5rem; */
   font-size: 2rem;
+}
+
+.li-header {
+  font-weight: 600 !important;
+  font-size: 3rem !important;
+  margin-bottom: 1rem;
 }
 
 .contac--icon {

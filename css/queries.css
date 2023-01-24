@@ -24,7 +24,7 @@
   }
 }
 
-@media (max-width: 87em) {
+@media (max-width: 80em) {
   header {
     /* padding: 3rem 7rem; */
   }
@@ -105,6 +105,14 @@
   .text--1,
   .text--2 {
     font-size: 5rem;
+  }
+
+  .left {
+    gap: 2rem;
+  }
+
+  .company ul {
+    gap: 0.4rem;
   }
 
   #section--1 {
@@ -234,6 +242,20 @@
   }
 }
 
+@media (max-width: 75em) {
+  footer {
+    height: 45rem;
+  }
+  .left {
+    flex-direction: column;
+    flex-basis: 0;
+  }
+
+  .footer-link {
+    font-size: 3rem;
+  }
+}
+
 @media (max-width: 59em) {
   :root {
   }
@@ -287,11 +309,15 @@
   /* Footer */
   footer {
     flex-direction: column;
-    height: 80rem;
+    height: 120rem;
+  }
+  .company ul {
+    height: 80%;
   }
   .mobile-hours {
     display: block;
     text-align: center;
+    margin: 1.4rem 0 6.4rem 0;
   }
 
   .mobile-hours h1 {
@@ -310,7 +336,7 @@
     text-align: center;
   }
   .left {
-    gap: 8rem;
+    /* gap: 8rem; */
     align-items: flex-start;
   }
   .page--margin {
@@ -434,6 +460,11 @@
     text-align: center;
   }
 
+  footer {
+    /* flex-direction: column; */
+    /* height: 105rem; */
+  }
+
   .left {
     flex-direction: column;
     gap: 3rem;
@@ -441,7 +472,7 @@
   }
 
   .mobile-hours {
-    margin-bottom: 8rem;
+    margin: 5rem 0;
   }
   /* /////////////// */
   /* USLUGI */
