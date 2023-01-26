@@ -879,9 +879,11 @@ footer {
   justify-content: flex-end;
 }
 
-.map {
-  width: 80%;
-  height: 100%;
+.map,
+iframe {
+  width: 90%;
+  height: 120%;
+  border-radius: 10px;
 }
 
 .mobile-hours {

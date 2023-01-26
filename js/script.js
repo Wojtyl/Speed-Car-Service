@@ -48,10 +48,6 @@ if (section1) {
       section0.classList.remove("section--sticky");
     }
   });
-
-  window.addEventListener("click", (e) => {
-    console.log(e.target);
-  });
 }
 
 if (polygon) {
@@ -97,7 +93,6 @@ if (services) {
   });
 }
 if (specificServices) {
-  console.log("keste,");
   const initialCoords = specificServices.getBoundingClientRect();
   const header = document.querySelector(".header");
 
@@ -131,7 +126,6 @@ items.forEach((item) => item.addEventListener("click", toggleAccordion));
 
 //Kontakt
 const contactBtn = document.querySelector(".btn--submit-contact");
-if (contactBtn) console.log("JEST");
 
 //Mobile nav
 const btnNavEl = document.querySelector(".nav-mobile");
@@ -148,14 +142,10 @@ btnNavEl.addEventListener("click", function () {
   if (menuOpen.style.display === "block") {
     menuOpen.style.display = "none";
     menuClose.style.display = "block";
-    console.log("menuOpen block -> none");
   } else {
     menuClose.style.display = "none";
     menuOpen.style.display = "block";
-    console.log("menuClose block -> none");
   }
-  console.log(menuClose.style.display);
-  console.log(menuOpen.style.display);
   if (header.classList.contains("open--nav")) {
     header.addEventListener("wheel", function (e) {
       e.preventDefault();

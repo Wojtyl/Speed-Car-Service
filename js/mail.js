@@ -3,8 +3,10 @@ const sendBTN = document.querySelector(".btn--submit-contact");
 sendBTN.addEventListener("click", function (e) {
   e.preventDefault();
 
-  const serviceID = "service_zgkkmqa";
-  const templateID = "template_mpdwi9q";
+  // const serviceID = "service_zgkkmqa";
+  const serviceID = "service_6hd5hth";
+  // const templateID = "template_mpdwi9q";
+  const templateID = "template_9hxgi1e";
 
   //sendBTN.addEventListener("click", function () {
   const name = document.getElementById("name").value;
